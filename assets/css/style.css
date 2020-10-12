@@ -1,0 +1,459 @@
+:root {
+  --color-main: #fff;
+  --color-opposite: #000;
+  --color-muted: #a6a6a6;
+  --color-main-opacity: rgba(255, 255, 255, 0.3);
+  --size-1: 8px;
+  --size-2: 16px;
+  --size-3: 24px;
+  --size-4: 32px;
+  --size-5: 48px;
+  --size-6: 84px;
+}
+
+body {
+  color: var(--color-main);
+  font-size: 0.875rem;
+  line-height: 1.142857142857143;
+  font-family: Roboto;
+  background-color: var(--color-opposite);
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  transition: color 0.1s;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: var(--size-3);
+}
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: var(--size-3);
+}
+h6 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: var(--size-2);
+}
+h6 small {
+  font-weight: 400;
+}
+
+
+/* components */
+.container {
+  position: relative;
+}
+
+.donation {
+  font-size: 1rem;
+  padding-top: var(--size-3);
+  padding-bottom: var(--size-6);
+}
+.donation a {
+  text-decoration: none;
+}
+
+.app-name {
+  font-size: 1rem;
+  margin-bottom: var(--size-2);
+  display: block;
+}
+
+.tap {
+  width: 135px;
+  margin-bottom: 100px;
+  position: relative;
+  top: -50px;
+  left: -15px;
+}
+.tap img {
+  max-width: 100%;
+}
+.tap-tube {
+  width: 69%;
+}
+.tap-drop {
+  width: 8%;
+  position: absolute;
+  top: 81%;
+  left: 41%;
+  opacity: 1;
+}
+.tap-spray {
+  width: 100%;
+  position: absolute;
+  top: 71%;
+  left: 0;
+  opacity: 0;
+}
+.tap-stream {
+  width: 28.5%;
+  position: absolute;
+  top: 85%;
+  left: 39%;
+  opacity: 0;
+}
+.tap.play .tap-drop {
+  opacity: 0;
+}
+.tap.play .tap-spray,
+.tap.play .tap-stream {
+  opacity: 1;
+}
+
+.app-links a {
+  display: inline-block;
+}
+.app-links a ~ a {
+  margin-left: var(--size-2);
+}
+.app-links a img {
+  height: 40px;
+}
+
+.btn {
+  color: var(--color-opposite);
+  text-decoration: none;
+  background-color: var(--color-main);
+}
+.btn:hover {
+  background-color: var(--color-muted);
+}
+.btn.control {
+  padding: 0.6875rem 2.425rem;
+}
+.btn.control svg {
+  vertical-align: -7px;
+}
+.btn.control strong {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-left: 20px;
+  display: block;
+  display: none;
+}
+.btn.control .play path {
+  fill: var(--color-opposite);
+}
+.btn.control.play .play path {
+  fill: none;
+}
+.btn.control.play .pause rect {
+  fill: var(--color-opposite);
+}
+.btn.control .pause-text {
+  display: inline-block;
+}
+.btn.control.play .pause-text {
+  display: none;
+}
+.btn.control.play .play-text {
+  display: inline-block;
+}
+
+.player {
+  font-size: 1rem;
+  padding-bottom: var(--size-4);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.player-box {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 30%), rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(3px);
+  border-radius: .25rem;
+  overflow: hidden;
+  transform: translateY(200%);
+  transition: transform 0.3s;
+}
+.player.visible .player-box {
+  transform: translateY(0);
+}
+.player .controls {
+  height: 60px;
+}
+.player .btn.control {
+  --color-opposite: var(--color-main);
+  padding: 0 1.375rem;
+  background: transparent;
+  border-color: transparent;
+  margin-left: var(--size-1);
+}
+.player .btn.control:focus {
+  box-shadow: none;
+}
+.player h3 {
+  font-size: 1rem;
+  margin: 0;
+  display: inline-block;
+}
+.player .btn.text-icon {
+  color: var(--color-main);
+  padding: 1.375rem 2.8rem;
+  background-color: var(--color-main-opacity);
+  border-color: transparent;
+  border-radius: 0;
+}
+.player .app-links .text-muted {
+  margin-right: var(--size-3);
+}
+.player .break {
+  height: 3px;
+}
+
+
+/* header block */
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header-content {
+  flex-basis: 100%;
+}
+.header-control {
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-5);
+}
+.header .app-links {
+  margin-bottom: var(--size-6);
+}
+
+
+/* main block */
+.main {
+  overflow: hidden;
+}
+
+.main section {
+  margin-bottom: var(--size-6);
+}
+.main section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.main .cell:nth-child(2n) {
+  padding-top: var(--size-6);
+  margin-top: var(--size-5);
+}
+
+.main .app-links {
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-5);
+}
+
+.main-help {
+  margin-top: var(--size-4);
+  padding-bottom: var(--size-6);
+}
+
+/* footer block */
+.footer {
+  margin-bottom: var(--size-6);
+}
+.footer > div {
+  margin-bottom: var(--size-4);
+}
+.footer a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: var(--color-main);
+}
+
+
+/* helpers */
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-icon {
+  display: inline-block;
+}
+.text-icon img {
+  vertical-align: -7px;
+}
+.text-icon span {
+  margin-left: var(--size-1);
+}
+
+.badge {
+  font-size: 0.875rem;
+  color: var(--color-opposite);
+  padding: .15em .25em;
+  background-color: var(--color-main);
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+
+
+/* media */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+    line-height: 84px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .donation {
+    align-self: flex-start;
+    text-align: right;
+    padding-top: var(--size-4);
+    padding-bottom: 0;
+  }
+  .donation br {
+    display: none;
+  }
+
+  .tap {
+    width: 424px;
+    margin-bottom: 0;
+    top: 0;
+    left: -120px;
+  }
+
+  .app-name {
+    margin-bottom: var(--size-3);
+  }
+
+  .header-content {
+    padding-left: 234px;
+    margin-top: -280px;
+    margin-bottom: 250px;
+  }
+
+  .header-control {
+    margin-top: var(--size-4);
+    margin-bottom: var(--size-6);
+  }
+
+  .main .cell {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .main-help {
+    padding-bottom: var(--size-5);
+  }
+  .main .app-links {
+    margin-bottom: 0;
+  }
+  .main .app-links img {
+    height: 36px;
+  }
+
+  .footer {
+    margin-bottom: calc(160px + var(--size-6));
+  }
+  .footer > div {
+    margin-bottom: 0;
+  }
+
+  .player {
+    padding-bottom: var(--size-5);
+  }
+  .player h3 {
+    font-size: 22px;
+  }
+  .player .controls {
+    height: 80px;
+  }
+  .player .btn.control {
+    margin-left: var(--size-2);
+  }
+  .player .btn.text-icon {
+    padding: 1.625rem 2.8rem;
+  }
+  .player .app-links {
+    margin-left: 38px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1240px;
+    padding-left: 420px;
+    padding-right: 100px;
+  }
+
+  .tap {
+    width: 424px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+
+  .donation {
+    flex-basis: 100%;
+  }
+
+  .header {
+    padding-bottom: var(--size-5);
+  }
+
+  .header-content {
+    padding-left: 0;
+    margin-top: var(--size-4);
+    margin-bottom: 0;
+  }
+
+  .main .app-links img {
+    height: 40px;
+  }
+
+  .footer {
+    margin-bottom: calc(72px + var(--size-6));
+  }
+
+  .player {
+    right: 15px;
+    left: 15px;
+  }
+  .player .container {
+    padding: 0;
+  }
+  .player .btn.text-icon {
+    padding: 1.375rem 2.8rem;
+  }
+  .player .controls {
+    height: auto;
+  }
+}
+
+/* fix line break in the player */
+@media (min-width: 1180px) {
+  .player .break {
+    display: none;
+  }
+}

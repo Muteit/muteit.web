@@ -1,0 +1,9 @@
+<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="pause">
+    <rect width="8" height="23"/>
+    <rect x="14" width="8" height="23"/>
+  </g>
+  <g id="play">
+    <path d="M20 12L0.499999 23.2583L0.5 0.741669L20 12Z"/>
+  </g>
+</svg>
