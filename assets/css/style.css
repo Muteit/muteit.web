@@ -130,9 +130,6 @@ h6 small {
   text-decoration: none;
   background-color: var(--color-main);
 }
-.btn:hover {
-  background-color: var(--color-muted);
-}
 .btn.control {
   padding: 0.6875rem 2.425rem;
 }
@@ -427,6 +424,10 @@ h6 small {
     padding-left: 0;
     margin-top: var(--size-4);
     margin-bottom: 0;
+  }
+
+  .btn:hover {
+    background-color: var(--color-muted);
   }
 
   .main .app-links img {
