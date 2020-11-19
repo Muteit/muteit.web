@@ -4,6 +4,14 @@ let tap = d.querySelector('.tap');
 let buttons = d.querySelectorAll('.btn.control');
 let headerButton = d.querySelector('.header-control .control');
 let player = d.querySelector('.player');
+audio.addEventListener('timeupdate', function() {
+  if(this.currentTime > this.duration - 0.44) {
+    this.currentTime = 0;
+    this.play();
+  }
+});
+
+
 
 const playAudio = (obj) => {
   let stopAttempt = setInterval(() => {
