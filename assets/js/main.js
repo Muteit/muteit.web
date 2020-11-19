@@ -5,7 +5,7 @@ let buttons = d.querySelectorAll('.btn.control');
 let headerButton = d.querySelector('.header-control .control');
 let player = d.querySelector('.player');
 audio.addEventListener('timeupdate', function() {
-  if(this.currentTime > this.duration - 0.44) {
+  if(this.currentTime > this.duration - 1) {
     this.currentTime = 0;
     this.play();
   }
