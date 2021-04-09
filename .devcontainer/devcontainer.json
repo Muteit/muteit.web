@@ -43,7 +43,9 @@
 	"extensions": [
 		"GitHub.vscode-pull-request-github",
 		"ritwickdey.liveserver",
-		"abusaidm.html-snippets"
+		"abusaidm.html-snippets",
+		"dart-code.flutter",
+		"dart-code.dart-code"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
