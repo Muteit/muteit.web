@@ -23,7 +23,7 @@ const playAudio = (obj) => {
         clearInterval(stopAttempt);
       }).catch(console.log);
     }
-  }, -1);
+  }, 0);
 }
 
 const control = (e) => {
