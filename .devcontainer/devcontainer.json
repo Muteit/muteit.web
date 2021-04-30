@@ -1,4 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+<<<<<<< Updated upstream
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.166.1/containers/codespaces-linux
 =======
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.163.1/containers/codespaces-linux
@@ -10,6 +11,7 @@
 	},
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash",
+<<<<<<< Updated upstream
 		"go.toolsManagement.checkForUpdates": "local",
 =======
 		"go.toolsManagement.checkForUpdates": "off",
@@ -38,6 +40,7 @@
 	"overrideCommand": false,
 	"workspaceMount": "source=${localWorkspaceFolder},target=/home/codespace/workspace,type=bind,consistency=cached",
 	"workspaceFolder": "/home/codespace/workspace",
+<<<<<<< Updated upstream
 	"runArgs": [
 		"--cap-add=SYS_PTRACE",
 		"--security-opt",
@@ -57,4 +60,18 @@
 	// "forwardPorts": [],
 	// "oryx build" will automatically install your dependencies and attempt to build your project
 	"postCreateCommand": "oryx build -p virtualenv_name=.venv --log-file /tmp/oryx-build.log || echo 'Could not auto-build. Skipping.'"
+=======
+	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined", "--privileged", "--init" ],
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"GitHub.vscode-pull-request-github"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// "oryx build" will automatically install your dependencies and attempt to build your project
+	"postCreateCommand": "oryx build -p virtualenv_name=.venv || echo 'Could not auto-build. Skipping.'"
+>>>>>>> Stashed changes
 }
