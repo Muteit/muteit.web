@@ -2,7 +2,37 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
+
+# Нам нужно стригерить на пул и пуш
+#
+# Для добавления в GoDaddy нужного домена нужно зарегать creadentials в корне репозитория
+# и используя метод https://developer.godaddy.com/doc/endpoint/domains#/v1/recordAdd добавить github.ref = 'refs/heads/<branch_name>'
+
+
+# нужно <branch_name> достать из string и вставить в dns запись вида <branch_name>.<domain_name>
+# если ветка main то <branch_name> = muteitapp
+# по адресу http://www.godaddy.com/v1/domains/{domain}/records передаем json:  
+# [
+#   {
+#     "data": "string", # Обязательно
+#     "name": "string", # Обязательно $domain
+#     "port": 0,
+#     "priority": 0,
+#     "protocol": "string",
+#     "service": "string",
+#     "ttl": 0,
+#     "type": "A", # обязательно 
+#     "weight": 0
+#   }
+# ]
+
+env:
+  # пример переменной: MY_ENV_VAR: ${{ <expression> }} 
+  DOMAIN_NAME: ${{ <expression> }} # получаем из CNAME
+  BRANCH_NAME: ${{ <expression> }} # получаем из github.ref
+  GODADDY_API_CREDANTIAL: ${{ secrets.GODADDY_API_CREDANTIAL }} # зарегать на godaddy и прописать в репозиторий
+
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -15,6 +45,9 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  prod-check:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    env.BRANCH_NAME = 'muteitapp'
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
