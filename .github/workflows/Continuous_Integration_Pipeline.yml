@@ -29,9 +29,9 @@ name: CI
 
 env:
   # пример переменной: MY_ENV_VAR: ${{ <expression> }} 
-  DOMAIN_NAME: ${{ <expression> }} # получаем из CNAME
-  BRANCH_NAME: ${{ <expression> }} # получаем из github.ref
-  GODADDY_API_CREDANTIAL: ${{ secrets.GODADDY_API_CREDANTIAL }} # зарегать на godaddy и прописать в репозиторий
+  # DOMAIN_NAME: ${{ <expression> }} # получаем из CNAME
+  # BRANCH_NAME: ${{ <expression> }} # получаем из github.ref
+  # GODADDY_API_CREDANTIAL: ${{ secrets.GODADDY_API_CREDANTIAL }} # зарегать на godaddy и прописать в репозиторий
 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -45,25 +45,53 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  prod-check:
-    if: ${{ github.ref == 'refs/heads/main' }}
-    env.BRANCH_NAME = 'muteitapp'
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+#job 1 upload file
+  job_1:
+    name: Ubuntu Job 1
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - shell: bash
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo Job 1 is done! Congratulations!
+          echo Job 1 wrote in file!
+      - name: Upload math result for job 1
+        uses: actions/upload-artifact@v2
+        with:
+          name: Job1
+          path: job1.txt
+   #job 2 summa + 9     
+  job_2:
+    name: Winodws Job 2
+    needs: job_1
+    runs-on: windows-latest
+    steps:
+      - name: Download math result for job 1
+        uses: actions/download-artifact@v2
+        with:
+          name: Job2
+      - shell: bash
+        run: |
+          value=`cat job1.txt`
+          expr $value \+ 9 > job1.txt
+      - name: Upload math result for job 2
+        uses: actions/upload-artifact@v2
+        with:
+          name: Job2
+          path: job1.txt
+  
+  #Job 3 Display Results
+  job_3:
+    name: Display results (macOS)
+    needs: job_2
+    runs-on: macOS-latest
+    steps:
+      - name: Download math result for job 2
+        uses: actions/download-artifact@v2
+        with:
+          name: Job3
+      - name: Print the final result
+        shell: bash
+        run: |
+          value=`cat job1.txt`
+          echo The result is $value
+  
