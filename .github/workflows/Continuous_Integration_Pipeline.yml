@@ -45,53 +45,23 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-#job 1 upload file
-  job_1:
-    name: Ubuntu Job 1
+#jobs:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        run: |
-          echo Job 1 is done! Congratulations!
-          echo Job 1 wrote in file!
-      - name: Upload math result for job 1
-        uses: actions/upload-artifact@v2
-        with:
-          name: Job1
-          path: job1.txt
-   #job 2 summa + 9     
-  job_2:
-    name: Winodws Job 2
-    needs: job_1
-    runs-on: windows-latest
-    steps:
-      - name: Download math result for job 1
-        uses: actions/download-artifact@v2
-        with:
-          name: Job2
-      - shell: bash
-        run: |
-          value=`cat job1.txt`
-          expr $value \+ 9 > job1.txt
-      - name: Upload math result for job 2
-        uses: actions/upload-artifact@v2
-        with:
-          name: Job2
-          path: job1.txt
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event." #github.event_name - наименование события, например, push
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!" #runner.os - наименование оси сервера, на котором происходит обработка job'a, например, Linux
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." #github.ref - ветка, с которой мы запушили и github.repository - репозиторий
+      - name: Check out repository code #просто имя, может быть любым
+        uses: actions/checkout@v2
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner." #github.repository - репозиторий
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
   
-  #Job 3 Display Results
-  job_3:
-    name: Display results (macOS)
-    needs: job_2
+  Check-List-files-in-repository:
     runs-on: macOS-latest
-    steps:
-      - name: Download math result for job 2
-        uses: actions/download-artifact@v2
-        with:
-          name: Job3
-      - name: Print the final result
-        shell: bash
+      - name: List files in the repository
+      steps:
         run: |
-          value=`cat job1.txt`
-          echo The result is $value
+          ls ${{ github.workspace }} 
+      - run: echo "🍏 This job's status is ${{ job.status }}." #job.status - статус Job'ы
   
