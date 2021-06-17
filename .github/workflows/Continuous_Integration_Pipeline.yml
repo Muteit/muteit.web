@@ -60,7 +60,7 @@ jobs:
   Check-List-files-in-repository:
     name: List files in the repository
     runs-on: macOS-latest
-     steps:
+    steps:
       - name: List files in the repository
         uses: actions/checkout@v2
         run: |
