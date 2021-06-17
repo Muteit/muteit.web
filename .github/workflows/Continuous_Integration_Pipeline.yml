@@ -59,8 +59,9 @@ jobs:
   
   Check-List-files-in-repository:
     runs-on: macOS-latest
+    steps:
       - name: List files in the repository
-      steps:
+        uses: actions/checkout@v2
         run: |
           ls ${{ github.workspace }} 
       - run: echo "🍏 This job's status is ${{ job.status }}." #job.status - статус Job'ы
