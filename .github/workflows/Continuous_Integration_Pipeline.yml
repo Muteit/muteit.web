@@ -27,7 +27,7 @@ name: CI
 #   }
 # ]
 
-env:
+#env:
   # пример переменной: MY_ENV_VAR: ${{ <expression> }} 
   # DOMAIN_NAME: ${{ <expression> }} # получаем из CNAME
   # BRANCH_NAME: ${{ <expression> }} # получаем из github.ref
