@@ -161,6 +161,14 @@ h6 small {
 .btn.control.play .play-text {
   display: inline-block;
 }
+.bi-telegram{
+  background-color: #000;
+  color:#fff;
+}
+.bi-credit-card{
+  background-color: #000;
+  color:#fff;
+}
 
 .player {
   font-size: 1rem;
