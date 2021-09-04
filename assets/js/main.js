@@ -4,16 +4,16 @@ let tap = d.querySelector('.tap');
 let buttons = d.querySelectorAll('.btn.control');
 let headerButton = d.querySelector('.header-control .control');
 let player = d.querySelector('.player');
-
+/*
 audio.addEventListener('timeupdate', function() {
   if(this.currentTime > this.duration - .44) {
     this.currentTime = 0;
     this.play();
   }
 });
+*/
 
-
-
+/*
 const playAudio = (obj) => {
   let stopAttempt = setInterval(() => {
     let promise = obj.play();
@@ -24,11 +24,11 @@ const playAudio = (obj) => {
       }).catch(console.log);
     }
   });
-}
+} */
 
 const control = (e) => {
   if (audio.paused) {
-    playAudio(audio);
+    audio.play();
   } else {
     audio.pause();
   }
@@ -46,7 +46,7 @@ buttons.forEach(btn => {
 });
 
 
-
+// Определяем положение цетырехугольника переданного в функцию
 const isInViewport = (el) => {
   const rect = el.getBoundingClientRect();
 
@@ -55,7 +55,7 @@ const isInViewport = (el) => {
       -1 * rect.left <= rect.width
   );
 }
-
+// Убрали ви́димость всплывающего окна до проматывания страницы для работы кода ниже, это нужно убрать, слишком грязно :)
 setTimeout(() => {
   player.classList.remove('d-none');
 }, 300);
