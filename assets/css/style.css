@@ -414,6 +414,14 @@ h6 small {
 
   .donation {
     flex-basis: 100%;
+    align-self: flex-start;
+    text-align: right;
+    padding-top: var(--size-4);
+    padding-bottom: 0;
+  }
+  
+  .donation br {
+    display: none;
   }
 
   .header {
