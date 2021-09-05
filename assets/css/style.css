@@ -68,8 +68,8 @@ h6 small {
 }
 
 .app-name {
-  font-size: 1rem;
-  margin-bottom: var(--size-2);
+  font-size: 18px;
+  margin-bottom: var(--size-0);
   display: block;
 }
 
@@ -113,6 +113,11 @@ h6 small {
 .tap.play .tap-spray,
 .tap.play .tap-stream {
   opacity: 1;
+}
+
+.download-app {
+  font-size: 18px;
+  margin-bottom: 9px;
 }
 
 .app-links a {
@@ -318,8 +323,8 @@ h6 small {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   h1 {
-    font-size: 64px;
-    line-height: 84px;
+    font-size: 48px;
+    line-height: 60px;
   }
   h2 {
     font-size: 36px;
@@ -349,7 +354,7 @@ h6 small {
   }
 
   .app-name {
-    margin-bottom: var(--size-3);
+    margin-bottom: var(--size-0);
   }
 
   .header-content {
