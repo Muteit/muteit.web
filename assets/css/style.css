@@ -160,6 +160,16 @@ h6 small {
 .btn.control .pause-text {
   display: inline-block;
 }
+
+.bi-telegram{
+  background-color: #000;
+  color:#fff;
+}
+.bi-credit-card{
+  background-color: #000;
+  color:#fff;
+}
+
 .btn.control.play .pause-text {
   display: none;
 }
