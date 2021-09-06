@@ -59,33 +59,34 @@
 
 <div class="container">
   <header class="header">
-    <div class="tap">
-      <div class="tap-tube">
-        <img src="assets/img/tap.svg" alt="">
-      </div>
-      <div class="tap-drop">
-        <img src="assets/img/drop.svg" alt="">
-      </div>
-      <div class="tap-spray">
-        <img src="assets/img/spray.png" alt="">
-      </div>
-      <div class="tap-stream">
-        <img src="assets/img/stream.png" alt="">
-      </div>
-    </div>
 
-    <div class="donation">
-      <div class="row">
-        <img src="assets/img/logo-muteit-sound-helper.svg" class="mb-2" alt="Mute it application toilet helper">
-        <a href="https://t.me/muteitapp" target="_blank" class="bi bi-telegram ml-2"><i class="fab fa-telegram-plane mr-2"></i>В чат проекта в Telegram</a>
-        <a href="https://paypal.me/olianayda" target="_blank" class="bi bi-credit-card ml-2"><i class="fab fa-paypal mr-2"></i>Поддержать проект в PayPal</a>
+    <div class="row">
+
+      <div class="tap col-6 col-md-12 cell">
+        <div class="tap-tube">
+          <img src="assets/img/tap.svg" alt="">
+        </div>
+        <div class="tap-drop">
+          <img src="assets/img/drop.svg" alt="">
+        </div>
+        <div class="tap-spray">
+          <img src="assets/img/spray.png" alt="">
+        </div>
+        <div class="tap-stream">
+          <img src="assets/img/stream.png" alt="">
+        </div>
       </div>
-      
+
+      <div class="donation col-6 col-md-12 cell">
+        <a href="https://t.me/muteitapp" target="_blank" class="btn bi bi-telegram">В чат <br>проекта в Telegram</a>
+        <a href="https://paypal.me/olianayda" target="_blank" class="btn bi bi-credit-card">Поддержать <br>проект в PayPal</a>
+      </div>
+
     </div>
 
     <div class="header-content">
-      <span class="app-name">Mute it App</span>
-      <h1>Шум воды <br>из-под крана</h1>
+      <span class="app-name">Mute it app – карманный помощник в туалете</span>
+      <h1>Воспользуйтесь шумом воды,<br>чтобы посещать туалет<br>без стеснения</h1>  
 
       <div class="header-control">
         <a href="#" class="btn control">
@@ -102,7 +103,11 @@
           <strong class="pause-text">Включить</strong>
         </a>
       </div>
-      
+
+      <div class="download-app">
+        <span>Скоро будет доступно в App Store & Google Play</span>
+      </div>
+            
       <div class="app-links">
         <a href="https://t.me/muteitapp" target="_blank">
           <img src="assets/img/apple_store.png" alt="download from google play mute it app">
@@ -253,19 +258,21 @@
 
   <footer class="footer row">
     <div class="col-sm-3">
-      <a href="https://unicornwitnesses.com" target="_blank">Проект создан при участии некоммерческого комьюнити "Свидетели Единорога", подробнее про них тут</a>
+      <a class="bi bi-box-arrow-right" href="https://unicornwitnesses.com" target="_blank">Проект создан при участии некоммерческого комьюнити "Свидетели Единорога", подробнее про них тут</a>
     </div>
     <div class="col-sm-3">
-      <a href="http://olianayda.com" target="_blank">olianayda.com</a>
-      <a href="http://alexdolbun.com" target="_blank">alexdolbun.com</a>
-      <a href="https://alexandrverevkin.com/" target="_blank">alexandrverevkin.com</a>
-      <a href="https://maximlitvinov.me" target="_blank">maximlitvinov.me</a>
-      <a href="https://juliaudovichenko.com" target="_blank">juliaudovichenko.com</a>
-      <a href="https://evgenykhristenko.com" target="_blank">evgenykhristenko.com</a>
-      <a href="https://nikitakhristenko.com" target="_blank">nikitakhristenko.com</a>
+      <div class="d-flex flex-column">
+        <a class="bi bi-box-arrow-right text-light p-2" href="http://olianayda.com" target="_blank">olianayda.com</a>
+        <a class="bi bi-box-arrow-right text-light p-2" href="http://alexdolbun.com" target="_blank">alexdolbun.com</a>
+        <a class="bi bi-box-arrow-right text-light p-2" href="https://alexandrverevkin.com/" target="_blank">alexandrverevkin.com</a>
+        <a class="bi bi-box-arrow-right text-light p-2" href="https://maximlitvinov.me" target="_blank">maximlitvinov.me</a>
+        <a class="bi bi-box-arrow-right text-light p-2" href="https://juliaudovichenko.com" target="_blank">juliaudovichenko.com</a>
+        <a class="bi bi-box-arrow-right text-light p-2" href="https://evgenykhristenko.com" target="_blank">evgenykhristenko.com</a>
+        <a class="bi bi-box-arrow-right text-light p-2" href="https://nikitakhristenko.com" target="_blank">nikitakhristenko.com</a>
+      </div>
     </div>
     <div class="col-sm-3">
-      <a href="https://t.me/muteitapp" target="_blank">Как создавался проект, открытый чат в Telegram</a>
+      <a class="bi bi-telegram" href="https://t.me/muteitapp" target="_blank">Как создавался проект, открытый чат в Telegram</a>
     </div>
   </footer>
 </div>
@@ -319,7 +326,7 @@
 </div>
 
 <audio id="audio" preload="auto" loop >
-  <source src="assets/audio/watertap.mp3">
+  <source src="assets/audio/watertap.mp3" type="audio/mp3">
 </audio>
  
 <script src="assets/js/main.js" async></script>
