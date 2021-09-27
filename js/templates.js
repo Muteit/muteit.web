@@ -1,21 +1,25 @@
 const renderHTML = (data) => {
-  return (
-    `<div class="container">
+	const lang = 'en';
+
+	const t = (tag) => translation[tag][lang];
+
+	return (
+		`<div class="container">
 		<header class="header">
 			<div class="row">
 				<div class="donation cell">
 					<div class="row">
 						<div class="col-md-5">
 							<img src="assets/img/logo-muteit-sound-helper-new.svg" class="mb-2"
-								alt="Mute it application toilet helper">
+								alt="${t('media-logo-muteit-sound-helper')}">
 						</div>
 						<div class="col-md-3">
-							<a href="https://t.me/muteitapp" target="_blank" class="bi bi-telegram">
-								<i class="fab fa-telegram-plane mr-1"></i>В чат проекта в Telegram</a>
+							<a href="${t('url-support-project')}" target="_blank" class="bi bi-telegram">
+								<i class="fab fa-telegram-plane mr-1"></i>${t('url-join-chat')}</a>
 						</div>
 						<div class="col-md-3">
-							<a href="https://paypal.me/olianayda" target="_blank" class="bi bi-credit-card"><i
-									class="fab fa-paypal mr-1"></i>Поддержать проект в PayPal</a>
+							<a href="t('url-support-project')" target="_blank" class="bi bi-credit-card"><i
+									class="fab fa-paypal mr-1"></i>${t('cta-support-project')}</a>
 						</div>
 						<div class="col-md-1">
 							<select class="change-lang mt-2"
@@ -50,10 +54,9 @@ const renderHTML = (data) => {
 				<div class="row">
 					<div class="col-md-12">
 						<span class="app-name">Mute it app – карманный помощник в туалете</span>
-						<h1>Воспользуйтесь шумом воды,<br>чтобы посещать туалет<br>без стеснения</h1>
+						<h1>${t('text-H1-main-text-on-the-page')}</h1>
 					</div>
 				</div>
-
 
 				<div class="header-control">
 					<a href="#" class="btn control">
@@ -66,22 +69,22 @@ const renderHTML = (data) => {
 								<path d="M20 12L0.499999 23.2583L0.5 0.741669L20 12Z" />
 							</g>
 						</svg>
-						<strong class="play-text">Остановить</strong>
-						<strong class="pause-text">Включить</strong>
+						<strong class="play-text">${t('cta-turn-on')}</strong>
+						<strong class="pause-text">${t('cta-turn-off')}</strong>
 					</a>
 				</div>
 
 				<div class="download-app">
-					<span>Скоро будет доступно в App Store & Google Play</span>
+					<span>${t('text-download-app')}</span>
 				</div>
 
 				<div class="app-links mt-3">
-					<a href="https://t.me/muteitapp" target="_blank">
-						<img src="assets/img/apple_store.png" alt="download from google play mute it app">
+					<a href="${t('url-download-appstore-icon')}" target="_blank">
+						<img src="assets/img/apple_store.png" alt="${t('media-download-appstore-icon')}">
 					</a>
 
-					<a href="https://t.me/muteitapp" target="_blank">
-						<img src="assets/img/google_play.png" alt="download from app store mute it app">
+					<a href="${t('url-download-GooglePlay-icon')}" target="_blank">
+						<img src="assets/img/google_play.png" alt="${t('media-download-GooglePlay-icon')}">
 					</a>
 				</div>
 			</div>
@@ -89,21 +92,20 @@ const renderHTML = (data) => {
 
 		<main class="main">
 			<section>
-				<h2>Замаскируй звуки <br>шумом воды</h2>
+				<h2>${t('text-H2-main-feature')}</h2>
 
 				<div class="row">
 					<div class="col-6 col-md-3 cell">
-						<img src="assets/img/img_1.svg" alt="illustration of flying poop">
+						<img src="assets/img/img_1.svg" alt="${t('media-balloon-picture')}">
 						<p>
-							Посещать туалет в гостях можно спокойнее. Звук воды не отвлечет друзей от беседы
+						${t('text-balloon-text')}
 						</p>
 					</div>
 
 					<div class="col-6 col-md-3 cell">
-						<img src="assets/img/img_2.svg" alt="">
+						<img src="assets/img/img_2.svg" alt="${t('media-hand-wash-picture')}">
 						<p>
-							Твои друзья знают, что ты пришёл к ним посрать. Но пусть думают,
-							что ты просто долго моешь руки
+						${t('text-hand-wash-text')}
 						</p>
 					</div>
 
@@ -306,5 +308,5 @@ const renderHTML = (data) => {
 			</div>
 		</div>
 	</div>`
-  )
+	)
 };
