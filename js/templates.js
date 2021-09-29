@@ -109,7 +109,7 @@ const renderHTML = (data, language) => {
 					</div>
 
 					<div class="col-6 col-md-3 cell">
-						<img src="assets/img/img_4.svg" alt="${t('media-tap-picture')}>
+						<img src="assets/img/img_4.svg" alt="${t('media-tap-picture')}">
 						<p>
 							${t('text-tap-text')}
 						</p>
@@ -129,33 +129,30 @@ const renderHTML = (data, language) => {
 						<div class="row">
 							<div class="col-md-3">
 								<p>
-									Включи воду в Mute it перед сном, чтобы расслабиться и отогнать
-									мысли
+								${t('text-relax-text')}
 								</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-6 col-md-3 offset-md-3 cell">
-						<img src="assets/img/img_6.svg" alt="">
+						<img src="assets/img/img_6.svg" alt="${t('meia-happy-picture')}">
 						<p>
-							Мы не гарантируем, что не будет слышно, как ты срёшь, но ты
-							точно будешь думать, что не слышно
+						${t('text-happy-text')}
 						</p>
 					</div>
 
 					<div class="col-6 col-md-3 cell">
-						<img src="assets/img/img_7.svg" alt="">
+						<img src="assets/img/img_7.svg" alt="${t('media-mobility-picture')}">
 						<p>
-							Вода журчит даже когда ты свернёшь приложение, не бойся, что
-							магия исчезнет, когда откроешь Инсту
+						${t('text-mobility-text')}
 						</p>
 					</div>
 
 					<div class="col-6 col-md-3 cell">
-						<img src="assets/img/img_8.svg" alt="">
+						<img src="assets/img/img_8.svg" alt="${t('media-chilling-picture')}">
 						<p>
-							Используй звук воды из крана вместо белого шума
+						${t('text-chilling-text')}
 						</p>
 					</div>
 				</div>

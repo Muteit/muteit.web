@@ -100,257 +100,257 @@ const translations = {
 		"en": "https://muteit.app/downloads",
 	},
 	//Footer
-	"cta-olia-nayda":{
-		"ru":"olianayda.com",
-		"en":"",
+	"cta-olia-nayda": {
+		"ru": "olianayda.com",
+		"en": "",
 	},
 
-	"url-olia-nayda":{
-		"ru":"https://olianayda.com",
-		"en":"",
+	"url-olia-nayda": {
+		"ru": "https://olianayda.com",
+		"en": "",
 	},
 
-	"text-noise-text":{
-		"ru":"Шум воды из под крана",
-		"en":"Tap water noise",
+	"text-noise-text": {
+		"ru": "Шум воды из под крана",
+		"en": "Tap water noise",
 	},
 
-	"text-abordable-picture":{
-		"ru":"Доступно",
-		"en":"Available at",
+	"text-abordable-picture": {
+		"ru": "Доступно",
+		"en": "Available at",
 	},
 
-	"media-download-appstore-icon":{
-		"ru":"Загрузите в App Store",
-		"en":"Download from the App Store",
+	"media-download-appstore-icon": {
+		"ru": "Загрузите в App Store",
+		"en": "Download from the App Store",
 	},
 
-	"url-download-appstore-icon":{
-		"ru":"/downloads",
-		"en":"",
+	"url-download-appstore-icon": {
+		"ru": "/downloads",
+		"en": "",
 	},
 
-	"media-download-GooglePlay-icon":{
-		"ru":"Доступно в Google Play",
-		"en":"Available on Google Play",
+	"media-download-GooglePlay-icon": {
+		"ru": "Доступно в Google Play",
+		"en": "Available on Google Play",
 	},
 
-	"url-download-GooglePlay-icon":{
-		"ru":"/downloads",
-		"en":"",
+	"url-download-GooglePlay-icon": {
+		"ru": "/downloads",
+		"en": "",
 	},
 
 	//Section-product presentation
-	"text-H1-main-text-on-the-page":{
-		"ru":"Воспользуйтесь шумом воды, чтобы посещать туалет без стеснения",
-		"en":"Take advantage of the noise of the water to visit the toilet without embarrassment",
+	"text-H1-main-text-on-the-page": {
+		"ru": "Воспользуйтесь шумом воды, чтобы посещать туалет без стеснения",
+		"en": "Take advantage of the noise of the water to visit the toilet without embarrassment",
 	},
 
-	"text-description-of-H1":{
-		"ru":"Создаём ощущение звуковой изоляции. В которой вы расслабитесь и сконцентрируетесь на главном",
-		"en":"Create a sense of sonic isolation. In which you can relax and concentrate on what's important",
+	"text-description-of-H1": {
+		"ru": "Создаём ощущение звуковой изоляции. В которой вы расслабитесь и сконцентрируетесь на главном",
+		"en": "Create a sense of sonic isolation. In which you can relax and concentrate on what's important",
 	},
 
-	"cta-turn-off":{
-		"ru":"Остановить",
-		"en":"Turn off",
+	"cta-turn-off": {
+		"ru": "Остановить",
+		"en": "Turn off",
 	},
 
-	"cta-turn-on":{
-		"ru":"Включить",
-		"en":"Turn on",
+	"cta-turn-on": {
+		"ru": "Включить",
+		"en": "Turn on",
 	},
 
-	"text-download-app":{
-		"ru":"Скоро будет доступно в App Store & Google Play",
-		"en":"Coming soon to the App Store & Google Play",
+	"text-download-app": {
+		"ru": "Скоро будет доступно в App Store & Google Play",
+		"en": "Coming soon to the App Store & Google Play",
 	},
 
-	"url-download-appstore-icon":{
-		"ru":"/downloads",
-		"en":"",
+	"url-download-appstore-icon": {
+		"ru": "/downloads",
+		"en": "",
 	},
 
-	"media-download-appstore-icon":{
-		"ru":"Загрузите в App Store",
-		"en":"Download from the App Store",
+	"media-download-appstore-icon": {
+		"ru": "Загрузите в App Store",
+		"en": "Download from the App Store",
 	},
 
-	"url-download-GooglePlay-icon":{
-		"ru":"/downloads",
-		"en":"",
+	"url-download-GooglePlay-icon": {
+		"ru": "/downloads",
+		"en": "",
 	},
 
-	"media-download-GooglePlay-icon":{
-		"ru":"Доступно в Google Play",
-		"en":"Available on Google Play",
+	"media-download-GooglePlay-icon": {
+		"ru": "Доступно в Google Play",
+		"en": "Available on Google Play",
 	},
 
 	//section-why-cover-sounds
 
-	"text-H2-main-feature":{
-		"ru":"Замаскируй звуки шумом воды",
-		"en":"Mask the sounds with the sound of water",
+	"text-H2-main-feature": {
+		"ru": "Замаскируй звуки шумом воды",
+		"en": "Mask the sounds with the sound of water",
 	},
 
-	"media-balloon-picture":{
-		"ru":"Воздушный шар с какашкой на верёвочке",
-		"en":"Balloon with poop on a string",
+	"media-balloon-picture": {
+		"ru": "Воздушный шар с какашкой на верёвочке",
+		"en": "Balloon with poop on a string",
 	},
 
-	"text-balloon-text":{
-		"ru":"Посещать туалет в гостях можно спокойнее. Muteit замаскирует журчания и всплески.",
-		"en":"Visiting the guest toilet can be more relaxing. Muteit disguises murmurs and splashes.",
+	"text-balloon-text": {
+		"ru": "Посещать туалет в гостях можно спокойнее. Muteit замаскирует журчания и всплески.",
+		"en": "Visiting the guest toilet can be more relaxing. Muteit disguises murmurs and splashes.",
 	},
 
-	"media-hand-wash-picture":{
-		"ru":"Две руки одного человека моют руки под краном. Мыло пенится на них.",
-		"en":"Two hands of the same person wash their hands under the tap. The soap foams on them.",
+	"media-hand-wash-picture": {
+		"ru": "Две руки одного человека моют руки под краном. Мыло пенится на них.",
+		"en": "Two hands of the same person wash their hands under the tap. The soap foams on them.",
 	},
 
-	"text-hand-wash-text":{
-		"ru":"Ваши друзья знают, что вы пришли к ним в туалет, но это не повод их стеснять. Пусть думают, что вы долго моете руки.",
-		"en":"Your friends know that you have come to their toilet, but that is no reason to embarrass them. Let them think you are taking a long time to wash your hands.",
+	"text-hand-wash-text": {
+		"ru": "Ваши друзья знают, что вы пришли к ним в туалет, но это не повод их стеснять. Пусть думают, что вы долго моете руки.",
+		"en": "Your friends know that you have come to their toilet, but that is no reason to embarrass them. Let them think you are taking a long time to wash your hands.",
 	},
 
 	//section Downloads 
-	"text-H1-downloads":{
-		"ru":"Спасибо, что заинтересовались Mute it app. Мы изо всех сил стараемся, чтобы приложение стало доступным скорее.",
-		"en":"Thank you for being interested in Mute it app. We are trying our best to make the app available as soon as possible.",
+	"text-H1-downloads": {
+		"ru": "Спасибо, что заинтересовались Mute it app. Мы изо всех сил стараемся, чтобы приложение стало доступным скорее.",
+		"en": "Thank you for being interested in Mute it app. We are trying our best to make the app available as soon as possible.",
 	},
 
-	"text-description-of-H1":{
-		"ru":"Если вы хотите помочь нам с разработкой и выпустить приложение быстрее, мы всегда открыты к новым знакомствам и примем помощь",
-		"en":"If you want to help us develop and release the app quicker, we are always opened to new acquaintances and will accept your help",
-	},
-	
-	"text-join-team-text":{
-		"ru":"С дорогой душой примем в команду, искренне желающих помочь",
-		"en":"We will accept with arms open those, who are sincerely desiring to help us",
+	"text-description-of-H1": {
+		"ru": "Если вы хотите помочь нам с разработкой и выпустить приложение быстрее, мы всегда открыты к новым знакомствам и примем помощь",
+		"en": "If you want to help us develop and release the app quicker, we are always opened to new acquaintances and will accept your help",
 	},
 
-	"cta-open-chat":{
-		"ru":"В открытый чат в телеграме",
-		"en":"In open telegram chat",
+	"text-join-team-text": {
+		"ru": "С дорогой душой примем в команду, искренне желающих помочь",
+		"en": "We will accept with arms open those, who are sincerely desiring to help us",
 	},
 
-	"url-open-chat":{
-		"ru":"https://t.me/muteitapp",
-		"en":"https://t.me/muteitapp",
+	"cta-open-chat": {
+		"ru": "В открытый чат в телеграме",
+		"en": "In open telegram chat",
 	},
 
-	"text-tell-about-problems-text":{
-		"ru":"Не хотите в команду? Расскажите о своих проблемах нашей чуткой команде исследователей, чтобы мы улучшили приложение",
-		"en":"Don't want to get into the team? Tell our team about your problems, so that we can make the app better",
+	"url-open-chat": {
+		"ru": "https://t.me/muteitapp",
+		"en": "https://t.me/muteitapp",
 	},
 
-	"cta-message-teammate-1":{
-		"ru":"Никите в Telegram",
-		"en":"Nikita on telegram",
+	"text-tell-about-problems-text": {
+		"ru": "Не хотите в команду? Расскажите о своих проблемах нашей чуткой команде исследователей, чтобы мы улучшили приложение",
+		"en": "Don't want to get into the team? Tell our team about your problems, so that we can make the app better",
 	},
 
-	"url-message-teammate-1":{
-		"ru":"https://t.me/nikita_khristenko",
-		"en":"https://t.me/nikita_khristenko",
+	"cta-message-teammate-1": {
+		"ru": "Никите в Telegram",
+		"en": "Nikita on telegram",
 	},
 
-	"cta-message-teammate-2":{
-		"ru":"Оле на почту",
-		"en":"Mail to Olia",
+	"url-message-teammate-1": {
+		"ru": "https://t.me/nikita_khristenko",
+		"en": "https://t.me/nikita_khristenko",
 	},
 
-	"url-message-teammate-2":{
-		"ru":"mailto:olianayda@gmail.com",
-		"en":"mailto:olianayda@gmail.com",
+	"cta-message-teammate-2": {
+		"ru": "Оле на почту",
+		"en": "Mail to Olia",
 	},
 
-	"text-H2-main-feature":{
-		"ru":"Замаскируй звуки шумом воды",
-		"en":"Mask the sounds with the sound of water",
+	"url-message-teammate-2": {
+		"ru": "mailto:olianayda@gmail.com",
+		"en": "mailto:olianayda@gmail.com",
 	},
 
-	"media-balloon-picture":{
-		"ru":"Воздушный шар с какашкой на верёвочке",
-		"en":"Balloon with poop on a string",
+	"text-H2-main-feature": {
+		"ru": "Замаскируй звуки шумом воды",
+		"en": "Mask the sounds with the sound of water",
 	},
 
-	"text-balloon-text":{
-		"ru":"Посещать туалет в гостях можно спокойнее. Muteit замаскирует журчания и всплески.",
-		"en":"Visiting the guest toilet can be more relaxing. Muteit disguises murmurs and splashes.",
+	"media-balloon-picture": {
+		"ru": "Воздушный шар с какашкой на верёвочке",
+		"en": "Balloon with poop on a string",
 	},
 
-	"media-hand-wash-picture":{
-		"ru":"Две руки одного человека моют руки под краном. Мыло пенится на них",
-		"en":"Two hands of the same person wash their hands under the tap. The soap foams on them",
+	"text-balloon-text": {
+		"ru": "Посещать туалет в гостях можно спокойнее. Muteit замаскирует журчания и всплески.",
+		"en": "Visiting the guest toilet can be more relaxing. Muteit disguises murmurs and splashes.",
 	},
 
-	"text-hand-wash-text":{
-		"ru":"Ваши друзья знают, что вы пришли к ним в туалет, но это не повод их стеснять. Пусть думают, что вы долго моете руки.",
-		"en":"Your friends know that you have come to their toilet, but that is no reason to embarrass them. Let them think you are taking a long time to wash your hands.",
+	"media-hand-wash-picture": {
+		"ru": "Две руки одного человека моют руки под краном. Мыло пенится на них",
+		"en": "Two hands of the same person wash their hands under the tap. The soap foams on them",
 	},
 
-	"media-mom-picture":{
-		"ru":"Нарисована женщина, которая что-то говорит",
-		"en":"A woman is drawn saying something",
+	"text-hand-wash-text": {
+		"ru": "Ваши друзья знают, что вы пришли к ним в туалет, но это не повод их стеснять. Пусть думают, что вы долго моете руки.",
+		"en": "Your friends know that you have come to their toilet, but that is no reason to embarrass them. Let them think you are taking a long time to wash your hands.",
 	},
 
-	"text-mom-text":{
-		"ru":"Мы знаем, как неловко бывает знакомиться с родителями вашей половинки, это не повод бояться посетить туалет",
-		"en":"We know how awkward it can be to meet your significant other's parents. That's no reason to be afraid to visit the toilet",
+	"media-mom-picture": {
+		"ru": "Нарисована женщина, которая что-то говорит",
+		"en": "A woman is drawn saying something",
 	},
 
-	"media-tap-picture":{
-		"ru":"Кран с бегущей водой",
-		"en":"Tap with running water",
+	"text-mom-text": {
+		"ru": "Мы знаем, как неловко бывает знакомиться с родителями вашей половинки, это не повод бояться посетить туалет",
+		"en": "We know how awkward it can be to meet your significant other's parents. That's no reason to be afraid to visit the toilet",
 	},
 
-	"text-tap-text":{
-		"ru":"Позаботимся о пресной воде. Зачем тратить настоящую воду, если вам нужен всего лишь шум?",
-		"en":"Let's take care of the fresh water. Why waste real water if all you want is noise?",
+	"media-tap-picture": {
+		"ru": "Кран с бегущей водой",
+		"en": "Tap with running water",
 	},
 
-	"text-H2-second-feature":{
-		"ru":"Успокойся",
-		"en":"Relax",
+	"text-tap-text": {
+		"ru": "Позаботимся о пресной воде. Зачем тратить настоящую воду, если вам нужен всего лишь шум?",
+		"en": "Let's take care of the fresh water. Why waste real water if all you want is noise?",
 	},
 
-	"media-relax-picture":{
-		"ru":"Человечек в кровати",
-		"en":"Person in bed",
+	"text-H2-second-feature": {
+		"ru": "Успокойся",
+		"en": "Relax",
 	},
 
-	"text-relax-text":{
-		"ru":"Включи воду в Mute it перед сном, чтобы расслабиться и отогнать мысли",
-		"en":"Turn on the water in Mute it before you go to sleep, to relax and push your thoughts away",
+	"media-relax-picture": {
+		"ru": "Человечек в кровати",
+		"en": "Person in bed",
 	},
 
-	"meia-happy-picture":{
-		"ru":"Человек держит голову руками и улыбается",
-		"en":"The man holds his head with his hands and smiles",
+	"text-relax-text": {
+		"ru": "Включи воду в Mute it перед сном, чтобы расслабиться и отогнать мысли",
+		"en": "Turn on the water in Mute it before you go to sleep, to relax and push your thoughts away",
 	},
 
-	"text-happy-text":{
-		"ru":"Звук поможет создать ощущение личной изоляции",
-		"en":"Sound will help create a sense of personal isolation",
+	"meia-happy-picture": {
+		"ru": "Человек держит голову руками и улыбается",
+		"en": "The man holds his head with his hands and smiles",
 	},
 
-	"media-mobility-picture":{
-		"ru":"Смартфон. На экране изображение ленты из социальных сетей. Звуковые волны из динамиков смартфона. ",
-		"en":"Smartphone. An image of a social media feed on the screen. Sound waves from the smartphone's speakers.",
+	"text-happy-text": {
+		"ru": "Звук поможет создать ощущение личной изоляции",
+		"en": "Sound will help create a sense of personal isolation",
 	},
 
-	"text-mobility-text":{
-		"ru":"Шум воды не остановится, даже если вы свернёте приложение. Сёрфите в интернете и смотрите другие приложения, не беспокоясь о Muteit.",
-		"en":"The water noise won't stop even if you minimise the app. Surf the internet and watch other apps without worrying about Muteit.",
+	"media-mobility-picture": {
+		"ru": "Смартфон. На экране изображение ленты из социальных сетей. Звуковые волны из динамиков смартфона. ",
+		"en": "Smartphone. An image of a social media feed on the screen. Sound waves from the smartphone's speakers.",
 	},
 
-	"media-chilling-picture":{
-		"ru":"Человек сидит в позе лотоса и улыбается",
-		"en":"A man sits in a lotus pose and smiles",
+	"text-mobility-text": {
+		"ru": "Шум воды не остановится, даже если вы свернёте приложение. Сёрфите в интернете и смотрите другие приложения, не беспокоясь о Muteit.",
+		"en": "The water noise won't stop even if you minimise the app. Surf the internet and watch other apps without worrying about Muteit.",
 	},
 
-	"text-chilling-text":{
-		"ru":"Используйте звук воды из крана вместо белого шума, чтобы сосредоточиться",
-		"en":"Use the sound of water from the tap instead of white noise to focus",
+	"media-chilling-picture": {
+		"ru": "Человек сидит в позе лотоса и улыбается",
+		"en": "A man sits in a lotus pose and smiles",
+	},
+
+	"text-chilling-text": {
+		"ru": "Используйте звук воды из крана вместо белого шума, чтобы сосредоточиться",
+		"en": "Use the sound of water from the tap instead of white noise to focus",
 	},
 };
