@@ -1,17 +1,13 @@
-const renderHTML = (data) => {
-	const lang = 'en';
+const renderHTML = (data, language) => {
+	const t = (tag) => data?.[tag]?.[language];
 
-	const t = (tag) => translation[tag][lang];
-
-	return (
-		`<div class="container">
+	const html = `<div class="container">
 		<header class="header">
 			<div class="row">
 				<div class="donation cell">
 					<div class="row">
 						<div class="col-md-5">
-							<img src="assets/img/logo-muteit-sound-helper-new.svg" class="mb-2"
-								alt="${t('media-logo-muteit-sound-helper')}">
+
 						</div>
 						<div class="col-md-3">
 							<a href="${t('url-support-project')}" target="_blank" class="bi bi-telegram">
@@ -19,16 +15,13 @@ const renderHTML = (data) => {
 						</div>
 						<div class="col-md-3">
 							<a href="t('url-support-project')" target="_blank" class="bi bi-credit-card"><i
-									class="fab fa-paypal mr-1"></i>${t('cta-support-project')}</a>
+								class="fab fa-paypal mr-1"></i>${t('cta-support-project')}</a>
 						</div>
 						<div class="col-md-1">
 							<select class="change-lang mt-2"
 								style="color: #fff; background: #000; border: solid #fff 2px ; border-radius: 10px;">
 								<option value="en">EN</option>
 								<option value="ru" selected>RU</option>
-								<option value="de">DE</option>
-								<option value="fr">FR</option>
-								<option value="jp">JP</option>
 							</select>
 						</div>
 					</div>
@@ -48,7 +41,6 @@ const renderHTML = (data) => {
 					<img src="assets/img/stream.png" alt="">
 				</div>
 			</div>
-
 
 			<div class="container header-content">
 				<div class="row">
@@ -110,29 +102,29 @@ const renderHTML = (data) => {
 					</div>
 
 					<div class="col-6 col-md-3 cell">
-						<img src="assets/img/img_3.svg" alt="">
+						<img src="assets/img/img_3.svg" alt="${t('media-mom-text')}">
 						<p>
-							К вам приехала «вторая мама», но ты не хочешь, чтобы она слышала,
-							как ты ссышь
+							${t('text-mom-text')}
 						</p>
 					</div>
 
 					<div class="col-6 col-md-3 cell">
-						<img src="assets/img/img_4.svg" alt="">
+						<img src="assets/img/img_4.svg" alt="${t('media-tap-picture')}>
 						<p>
-							Ты всегда включаешь воду в туалете, когда ходишь по делам.
-							Зачем включать настоящую воду, когда можно электронную?
+							${t('text-tap-text')}
 						</p>
 					</div>
 				</div>
 			</section>
 
 			<section>
-				<h2>Успокойся</h2>
+				<h2>
+					${t('text-H2-second-feature')}
+				</h2>
 
 				<div class="row">
 					<div class="col-6 col-md-12 cell">
-						<img src="assets/img/img_5.svg" alt="">
+						<img src="assets/img/img_5.svg" alt="${t('media-relax-picture')}">
 
 						<div class="row">
 							<div class="col-md-3">
@@ -308,5 +300,6 @@ const renderHTML = (data) => {
 			</div>
 		</div>
 	</div>`
-	)
+
+	document.querySelector('body').innerHTML = html;
 };

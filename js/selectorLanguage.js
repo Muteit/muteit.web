@@ -4,6 +4,8 @@ const options = Array.from(select.querySelectorAll('option'));
 select.addEventListener('change', function() {
 	const selectedLanguage = options[select.selectedIndex].value
 	window.location.hash = selectedLanguage;
+  console.log('change');
+	renderHTML(translations, selectedLanguage);
 });
 
 function changeSelectedOption() {
