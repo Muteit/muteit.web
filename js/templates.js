@@ -127,42 +127,33 @@ const getTemplate = (data, language) => {
 						${t('text-H2-second-feature')}
 					</h2>
 
-					<div class="row">
-						<div class="col-6 col-md-12 cell">
-							<img src="assets/img/img_5.svg" alt="${t('media-relax-picture')}">
-
-							<div class="row">
-								<div class="col-md-3">
-									<p>
-										Включи воду в Mute it перед сном, чтобы расслабиться и отогнать
-										мысли
-									</p>
-								</div>
+						<div class="row">
+							<div class="col-md-3">
+								<p>
+								${t('text-relax-text')}
+								</p>
 							</div>
 						</div>
 
-						<div class="col-6 col-md-3 offset-md-3 cell">
-							<img src="assets/img/img_6.svg" alt="">
-							<p>
-								Мы не гарантируем, что не будет слышно, как ты срёшь, но ты
-								точно будешь думать, что не слышно
-							</p>
-						</div>
+					<div class="col-6 col-md-3 offset-md-3 cell">
+						<img src="assets/img/img_6.svg" alt="${t('meia-happy-picture')}">
+						<p>
+						${t('text-happy-text')}
+						</p>
+					</div>
 
-						<div class="col-6 col-md-3 cell">
-							<img src="assets/img/img_7.svg" alt="">
-							<p>
-								Вода журчит даже когда ты свернёшь приложение, не бойся, что
-								магия исчезнет, когда откроешь Инсту
-							</p>
-						</div>
+					<div class="col-6 col-md-3 cell">
+						<img src="assets/img/img_7.svg" alt="${t('media-mobility-picture')}">
+						<p>
+						${t('text-mobility-text')}
+						</p>
+					</div>
 
-						<div class="col-6 col-md-3 cell">
-							<img src="assets/img/img_8.svg" alt="">
-							<p>
-								Используй звук воды из крана вместо белого шума
-							</p>
-						</div>
+					<div class="col-6 col-md-3 cell">
+						<img src="assets/img/img_8.svg" alt="${t('media-chilling-picture')}">
+						<p>
+						${t('text-chilling-text')}
+						</p>
 					</div>
 				</section>
 
