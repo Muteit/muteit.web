@@ -12,8 +12,6 @@ audio.addEventListener('timeupdate', function() {
   }
 });
 
-
-
 const playAudio = (obj) => {
   let stopAttempt = setInterval(() => {
     let promise = obj.play();
@@ -27,6 +25,7 @@ const playAudio = (obj) => {
 }
 
 const control = (e) => {
+  console.log('click')
   if (audio.paused) {
     playAudio(audio);
   } else {
