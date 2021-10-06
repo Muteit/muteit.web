@@ -157,50 +157,47 @@ const getTemplate = (data, language) => {
 					</div>
 				</section>
 
-				<section>
-					<h2>Что будет:</h2>
+			<section>
+				<h2>${t('text-H2-what-includes-app')}</h2>
 
-					<div class="row">
-						<div class="col-md-6">
-							<div class="row">
-								<div class="col-6">
-									<h6>В Mute It</h6>
-									<p>Счётчик сэкономленной воды</p>
-								</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-6">
+								<h6>${t('updates-text')}</h6>
+								<p>${t('updates-description-text')}</p>
+							</div>
 
-								<div class="col-6">
-									<h6>
-										В Mute it <span class="badge">Pro</span><br>
-										<small class="text-muted">В процессе…</small>
-									</h6>
-									<p>Tрекингдефикации для контроля приёма лекарств и профилактики заболеваний</p>
-								</div>
+							<div class="col-6">
+								<h6>
+								${t('ecosystem-text')} <span class="badge">Pro</span><br>
+									// <small class="text-muted">В процессе…</small>
+								</h6>
+								<p>${t('text-ecosystem-description-text')}</p>
+							</div>
 
-								<div class="col main-help">
-									<h3>Помочь все сделать быстрее:</h3>
+							<div class="col main-help">
+								<h3>${t('text-H3-donating-text')}</h3>
 
-									<div class="row">
-										<div class="col-6">
-											<a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
-												<img src="assets/img/icon_money.svg" alt=""><span>Деньгами</span>
-											</a>
-										</div>
+								<div class="row">
+									<div class="col-6">
+										<a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
+											<img src="assets/img/icon_money.svg" alt=""><span>${t('text-money-text')}</span>
+										</a>
+									</div>
 
-										<div class="col-6">
-											<a href="https://t.me/muteitapp" target="_blank" class="text-icon">
-												<img src="assets/img/icon_volunteeer.svg"
-													alt="Перейти в чат telegram где общаются про социально значемый проект Muteitapp"><span>Руками
-													в
-													Telegram</span>
-											</a>
-										</div>
+									<div class="col-6">
+										<a href="https://t.me/muteitapp" target="_blank" class="text-icon">
+											<img src="assets/img/icon_volunteeer.svg"
+												alt="Перейти в чат telegram где общаются про социально значемый проект Muteitapp"><span>${t('text-money-text')}</span>
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-md-5 offset-md-1">
-							<strong>Первая версия уже доступна <br>для скачивания</strong>
+					<div class="col-md-5 offset-md-1">
+						<strong>${t('download-text')}</strong>
 
 							<div class="app-links">
 								<a href="https://t.me/muteitapp" target="_blank">
@@ -222,23 +219,29 @@ const getTemplate = (data, language) => {
 						участии
 						некоммерческого комьюнити "Свидетели Единорога", подробнее про них тут</a>
 				</div>
-				<div class="col-sm-3">
-					<div class="d-flex flex-column">
-						<a class="bi bi-box-arrow-right text-light p-2" href="http://olianayda.com"
-							target="_blank">olianayda.com</a>
-						<a class="bi bi-box-arrow-right text-light p-2" href="http://alexdolbun.com"
-							target="_blank">alexdolbun.com</a>
-						<a class="bi bi-box-arrow-right text-light p-2" href="https://alexandrverevkin.com/"
-							target="_blank">alexandrverevkin.com</a>
-						<a class="bi bi-box-arrow-right text-light p-2" href="https://maximlitvinov.me"
-							target="_blank">maximlitvinov.me</a>
-						<a class="bi bi-box-arrow-right text-light p-2" href="https://juliaudovichenko.com"
-							target="_blank">juliaudovichenko.com</a>
-						<a class="bi bi-box-arrow-right text-light p-2" href="https://evgenykhristenko.com"
-							target="_blank">evgenykhristenko.com</a>
-						<a class="bi bi-box-arrow-right text-light p-2" href="https://nikitakhristenko.com"
-							target="_blank">nikitakhristenko.com</a>
-					</div>
+			</section>
+		</main>
+
+		<footer class="footer row">
+			<div class="col-sm-3">
+				<a class="bi bi-box-arrow-right" href="https://unicornwitnesses.com" target="_blank">${('text-made-by-text')}</a>
+			</div>
+			<div class="col-sm-3">
+				<div class="d-flex flex-column">
+					<a class="bi bi-box-arrow-right text-light p-2" href="http://olianayda.com"
+						target="_blank">olianayda.com</a>
+					<a class="bi bi-box-arrow-right text-light p-2" href="http://alexdolbun.com"
+						target="_blank">alexdolbun.com</a>
+					<a class="bi bi-box-arrow-right text-light p-2" href="https://alexandrverevkin.com/"
+						target="_blank">alexandrverevkin.com</a>
+					<a class="bi bi-box-arrow-right text-light p-2" href="https://maximlitvinov.me"
+						target="_blank">maximlitvinov.me</a>
+					<a class="bi bi-box-arrow-right text-light p-2" href="https://juliaudovichenko.com"
+						target="_blank">juliaudovichenko.com</a>
+					<a class="bi bi-box-arrow-right text-light p-2" href="https://evgenykhristenko.com"
+						target="_blank">evgenykhristenko.com</a>
+					<a class="bi bi-box-arrow-right text-light p-2" href="https://nikitakhristenko.com"
+						target="_blank">nikitakhristenko.com</a>
 				</div>
 				<div class="col-sm-3">
 					<a class="bi bi-telegram" href="https://t.me/muteitapp" target="_blank">Как создавался проект, открытый
