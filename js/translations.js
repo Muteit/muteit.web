@@ -353,4 +353,27 @@ const translations = {
 		"ru":"Используйте звук воды из крана вместо белого шума, чтобы сосредоточиться",
 		"en":"Use the sound of water from the tap instead of white noise to focus",
 	},
+
+	//section-what-is-next
+	"text-updates-text" :{
+		"ru":"В Mute It",
+		"en":"At Mute It"
+	},	
+
+	"text-updates-description-text" :{
+		"ru":"- Советы экспертов как  и не навредить здоровью в туалете. - Счётчик сохранённой воды за время использования Mute it",
+		"en":"- Expert advice on how not to harm your health in the toilet. - Counter of water saved during use of Mute it"
+	},
+
+	"text-ecosystem-text" :{
+		"ru":"В Mute it Health вы сможете",
+		"en":"At Mute it Health you will be able to"
+	},
+
+	"text-ecosystem-description-text" :{
+		"ru":"- Отследить нарушения в кишечнике. - Отмечать изменения стула. - Следить за микрофлорой. - Следить влиянием медикаментов. - Легко делиться с доктором",
+		"en":"- Track bowel abnormalities. - Notice changes in stool. - Keep track of the microflora. - Monitor the effects of your medication. - Easily share with your doctor"
+	},
+
+
 };
