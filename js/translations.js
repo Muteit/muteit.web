@@ -213,7 +213,7 @@ const translations = {
 		"en": "Your friends know that you have come to their toilet, but that is no reason to embarrass them. Let them think you are taking a long time to wash your hands.",
 	},
 
-	//section Downloads 
+	//section Downloads
 	"text-H1-downloads": {
 		"ru": "Спасибо, что заинтересовались Mute it app. Мы изо всех сил стараемся, чтобы приложение стало доступным скорее.",
 		"en": "Thank you for being interested in Mute it app. We are trying our best to make the app available as soon as possible.",

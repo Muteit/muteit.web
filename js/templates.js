@@ -296,11 +296,7 @@ const getTemplate = (data, language) => {
 				</div>
 			</div>
 		</div>
-		<audio id="audio" preload="auto" loop>
-			<source src="assets/audio/watertap.mp3" type="audio/mp3">
-		</audio>
-		<script src="assets/js/main.js" async></script>
-	`
+	`;
 
 	return html;
 };
