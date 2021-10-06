@@ -129,8 +129,7 @@ const renderHTML = (data, language) => {
 						<div class="row">
 							<div class="col-md-3">
 								<p>
-									Включи воду в Mute it перед сном, чтобы расслабиться и отогнать
-									мысли
+								${t('text-relax-text')}
 								</p>
 							</div>
 						</div>
@@ -139,63 +138,59 @@ const renderHTML = (data, language) => {
 					<div class="col-6 col-md-3 offset-md-3 cell">
 						<img src="assets/img/img_6.svg" alt="">
 						<p>
-							Мы не гарантируем, что не будет слышно, как ты срёшь, но ты
-							точно будешь думать, что не слышно
+						${t('text-happy-text')}
 						</p>
 					</div>
 
 					<div class="col-6 col-md-3 cell">
 						<img src="assets/img/img_7.svg" alt="">
 						<p>
-							Вода журчит даже когда ты свернёшь приложение, не бойся, что
-							магия исчезнет, когда откроешь Инсту
+						${t('text-mobility-text')}
 						</p>
 					</div>
 
 					<div class="col-6 col-md-3 cell">
 						<img src="assets/img/img_8.svg" alt="">
 						<p>
-							Используй звук воды из крана вместо белого шума
+						${t('text-chilling-text')}
 						</p>
 					</div>
 				</div>
 			</section>
 
 			<section>
-				<h2>Что будет:</h2>
+				<h2>${t('text-H2-what-includes-app')}</h2>
 
 				<div class="row">
 					<div class="col-md-6">
 						<div class="row">
 							<div class="col-6">
-								<h6>В Mute It</h6>
-								<p>Счётчик сэкономленной воды</p>
+								<h6>${t('updates-text')}</h6>
+								<p>${t('updates-description-text')}</p>
 							</div>
 
 							<div class="col-6">
 								<h6>
-									В Mute it <span class="badge">Pro</span><br>
-									<small class="text-muted">В процессе…</small>
+								${t('ecosystem-text')} <span class="badge">Pro</span><br>
+									// <small class="text-muted">В процессе…</small> 
 								</h6>
-								<p>Tрекингдефикации для контроля приёма лекарств и профилактики заболеваний</p>
+								<p>${t('text-ecosystem-description-text')}</p>
 							</div>
 
 							<div class="col main-help">
-								<h3>Помочь все сделать быстрее:</h3>
+								<h3>${t('text-H3-donating-text')}</h3>
 
 								<div class="row">
 									<div class="col-6">
 										<a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
-											<img src="assets/img/icon_money.svg" alt=""><span>Деньгами</span>
+											<img src="assets/img/icon_money.svg" alt=""><span>${t('text-money-text')}</span>
 										</a>
 									</div>
 
 									<div class="col-6">
 										<a href="https://t.me/muteitapp" target="_blank" class="text-icon">
 											<img src="assets/img/icon_volunteeer.svg"
-												alt="Перейти в чат telegram где общаются про социально значемый проект Muteitapp"><span>Руками
-												в
-												Telegram</span>
+												alt="Перейти в чат telegram где общаются про социально значемый проект Muteitapp"><span>${t('text-money-text')}</span>
 										</a>
 									</div>
 								</div>
@@ -204,7 +199,7 @@ const renderHTML = (data, language) => {
 					</div>
 
 					<div class="col-md-5 offset-md-1">
-						<strong>Первая версия уже доступна <br>для скачивания</strong>
+						<strong>${t('download-text')}</strong>
 
 						<div class="app-links">
 							<a href="https://t.me/muteitapp" target="_blank">
@@ -222,9 +217,7 @@ const renderHTML = (data, language) => {
 
 		<footer class="footer row">
 			<div class="col-sm-3">
-				<a class="bi bi-box-arrow-right" href="https://unicornwitnesses.com" target="_blank">Проект создан при
-					участии
-					некоммерческого комьюнити "Свидетели Единорога", подробнее про них тут</a>
+				<a class="bi bi-box-arrow-right" href="https://unicornwitnesses.com" target="_blank">${('text-made-by-text')}</a>
 			</div>
 			<div class="col-sm-3">
 				<div class="d-flex flex-column">
