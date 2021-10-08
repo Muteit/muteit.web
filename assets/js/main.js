@@ -1,73 +1,76 @@
-let d = document;
-let audio = d.querySelector('#audio');
-let tap = d.querySelector('.tap');
-let buttons = d.querySelectorAll('.btn.control');
-let headerButton = d.querySelector('.header-control .control');
-let player = d.querySelector('.player');
-/*
-audio.addEventListener('timeupdate', function() {
-  if(this.currentTime > this.duration - .44) {
-    this.currentTime = 0;
-    this.play();
-  }
-});
-*/
+const initSounds = () => {
+	let d = document;
+	let audio = d.querySelector('#audio');
+	let tap = d.querySelector('.tap');
+	let buttons = d.querySelectorAll('.btn.control');
+	let headerButton = d.querySelector('.header-control .control');
+	let player = d.querySelector('.player');
 
-/*
-const playAudio = (obj) => {
-  let stopAttempt = setInterval(() => {
-    let promise = obj.play();
+	audio.addEventListener('timeupdate', function() {
+		if(this.currentTime > this.duration - .44) {
+			this.currentTime = 0;
+			this.play();
+		}
+	});
 
-    if (promise) {
-      promise.then(() => {
-        clearInterval(stopAttempt);
-      }).catch(console.log);
-    }
-  });
-} */
+	const playAudio = (obj) => {
+		let stopAttempt = setInterval(() => {
+			let promise = obj.play();
 
-const control = (e) => {
-  if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
+			if (promise) {
+				promise.then(() => {
+					clearInterval(stopAttempt);
+				}).catch(console.log);
+			}
+		}, 100);
+	}
 
-  [tap, ...buttons].forEach(btn => {
-    btn.classList.toggle('play');
-  });
+	const control = (e) => {
+		console.log('click')
+		if (audio.paused) {
+			playAudio(audio);
+		} else {
+			audio.pause();
+		}
 
-  e.preventDefault();
+		[tap, ...buttons].forEach(btn => {
+			btn.classList.toggle('play');
+		});
+
+		e.preventDefault();
+	}
+
+	buttons.forEach(btn => {
+		btn.addEventListener('click', control);
+		btn.addEventListener('touchstart', control);
+	});
+
+
+
+	const isInViewport = (el) => {
+		const rect = el.getBoundingClientRect();
+
+		return (
+				-1 * rect.top <= rect.height &&
+				-1 * rect.left <= rect.width
+		);
+	}
+
+	setTimeout(() => {
+		player.classList.remove('d-none');
+	}, 300);
+
+	window.addEventListener('scroll', function(e) {
+		if (isInViewport(headerButton)) {
+			player.classList.remove('visible');
+		} else {
+			if (!player.classList.contains('visible') && tap.classList.contains('play')) {
+				player.classList.add('visible');
+			}
+		}
+	}, {
+		passive: true
+	});
 }
 
-buttons.forEach(btn => {
-  btn.addEventListener('click', control);
-  btn.addEventListener('touchstart', control);
-});
-
-
-// Определяем положение цетырехугольника переданного в функцию
-const isInViewport = (el) => {
-  const rect = el.getBoundingClientRect();
-
-  return (
-      -1 * rect.top <= rect.height &&
-      -1 * rect.left <= rect.width
-  );
-}
-// Убрали ви́димость всплывающего окна до проматывания страницы для работы кода ниже, это нужно убрать, слишком грязно :)
-setTimeout(() => {
-  player.classList.remove('d-none');
-}, 300);
-
-window.addEventListener('scroll', function(e) {
-  if (isInViewport(headerButton)) {
-    player.classList.remove('visible');
-  } else {
-    if (!player.classList.contains('visible') && tap.classList.contains('play')) {
-      player.classList.add('visible');
-    }
-  }
-}, {
-  passive: true
-});
+initSounds();
