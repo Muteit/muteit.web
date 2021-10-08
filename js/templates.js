@@ -223,7 +223,7 @@ const getTemplate = (data, language) => {
 
 		<footer class="footer row">
 			<div class="col-sm-3">
-				<a class="bi bi-box-arrow-right" href="https://unicornwitnesses.com" target="_blank"${t('text-made-by-text')}</a>
+				<a class="bi bi-box-arrow-right" href="https://unicornwitnesses.com" target="_blank">${t('text-made-by-text')}</a>
 			</div>
 			<div class="col-sm-3">
 				<div class="d-flex flex-column">
