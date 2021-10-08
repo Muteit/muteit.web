@@ -17,6 +17,14 @@ const translations = {
 		"ru": "t.me/muteitapp",
 		"en": "t.me/muteitapp",
 	},
+	"cta-go-to-chat-telegram": {
+		"ru": "В чат проекта в Telegram",
+		"en": "Go to the project chat in Telegram",
+	},
+	"text-muteit-helper": {
+		"ru": "Mute it app – карманный помощник в туалете",
+		"en": "Mute it app - a pocket-sized toilet assistant",
+	},
 	"cta-support-project": {
 		"ru": "Поддержать проект через PayPal",
 		"en": "Support the project via PayPal",
@@ -61,7 +69,7 @@ const translations = {
 	},
 	"text-H3-donating-text": {
 		"ru": "Помочь все сделать быстрее:",
-		"en": "Помочь все сделать быстрее:",
+		"en": "Help us make everything faster:",
 	},
 	"media-money-picture": {
 		"ru": "Деньги в руке",
@@ -76,11 +84,11 @@ const translations = {
 		"en": "Heart in a hand",
 	},
 	"url-volunteer-text": {
-		"ru": "Руками",
-		"en": "By hands",
+		"ru": "Руками в Telegram ",
+		"en": "By hands  in a Telegram",
 	},
 	"text-download-text": {
-		"ru": "Первая версия пока не доступна для скачивания",
+		"ru": "Первая версия пока не доступна <br/> для скачивания",
 		"en": "First version is not yet available for downloading",
 	},
 	"media-app-store-picture": {
@@ -99,46 +107,7 @@ const translations = {
 		"ru": "https://muteit.app/downloads",
 		"en": "https://muteit.app/downloads",
 	},
-	//Footer
-	"cta-olia-nayda": {
-		"ru": "olianayda.com",
-		"en": "",
-	},
 
-	"url-olia-nayda": {
-		"ru": "https://olianayda.com",
-		"en": "",
-	},
-
-	"text-noise-text": {
-		"ru": "Шум воды из под крана",
-		"en": "Tap water noise",
-	},
-
-	"text-abordable-picture": {
-		"ru": "Доступно",
-		"en": "Available at",
-	},
-
-	"media-download-appstore-icon": {
-		"ru": "Загрузите в App Store",
-		"en": "Download from the App Store",
-	},
-
-	"url-download-appstore-icon": {
-		"ru": "/downloads",
-		"en": "",
-	},
-
-	"media-download-GooglePlay-icon": {
-		"ru": "Доступно в Google Play",
-		"en": "Available on Google Play",
-	},
-
-	"url-download-GooglePlay-icon": {
-		"ru": "/downloads",
-		"en": "",
-	},
 
 	//Section-product presentation
 	"text-H1-main-text-on-the-page": {
@@ -361,9 +330,14 @@ const translations = {
 	},
 
 	"text-updates-description-text" :{
-		"ru":"- Советы экспертов как  и не навредить здоровью в туалете. - Счётчик сохранённой воды за время использования Mute it",
-		"en":"- Expert advice on how not to harm your health in the toilet. - Counter of water saved during use of Mute it"
+		"ru":"- Советы экспертов как покакать и не навредить здоровью в туалете. <br>- Счётчик сохранённой воды за время использования Mute it",
+		"en":"- Expert advice on how not to harm your health in the toilet. <br>- Counter of water saved during use of Mute it"
 	},
+	"text-in-process-text" :{
+		"ru":"В процессе…",
+		"en":"In process…"
+	},
+
 
 	"text-ecosystem-text" :{
 		"ru":"В Mute it Health вы сможете",
@@ -371,9 +345,65 @@ const translations = {
 	},
 
 	"text-ecosystem-description-text" :{
-		"ru":"- Отследить нарушения в кишечнике. - Отмечать изменения стула. - Следить за микрофлорой. - Следить влиянием медикаментов. - Легко делиться с доктором",
-		"en":"- Track bowel abnormalities. - Notice changes in stool. - Keep track of the microflora. - Monitor the effects of your medication. - Easily share with your doctor"
+		"ru":"- Отследить нарушения в кишечнике.<br> - Отмечать изменения стула. <br>- Следить за микрофлорой. - Следить влиянием медикаментов. <br>- Легко делиться с доктором",
+		"en":"- Track bowel abnormalities.<br> - Notice changes in stool.<br> - Keep track of the microflora. - Monitor the effects of your medication. <br>- Easily share with your doctor"
 	},
 
+	//Footer
+	"cta-olia-nayda": {
+		"ru": "olianayda.com",
+		"en": "",
+	},
 
+	"url-olia-nayda": {
+		"ru": "https://olianayda.com",
+		"en": "",
+	},
+
+	"text-noise-text": {
+		"ru": "Шум воды из под крана",
+		"en": "Tap water noise",
+	},
+
+	"text-abordable-picture": {
+		"ru": "Доступно",
+		"en": "Available at",
+	},
+
+	"media-download-appstore-icon": {
+		"ru": "Загрузите в App Store",
+		"en": "Download from the App Store",
+	},
+
+	"url-download-appstore-icon": {
+		"ru": "/downloads",
+		"en": "",
+	},
+
+	"media-download-GooglePlay-icon": {
+		"ru": "Доступно в Google Play",
+		"en": "Available on Google Play",
+	},
+
+	"url-download-GooglePlay-icon": {
+		"ru": "/downloads",
+		"en": "",
+	},
+	"text-made-by-text" :{
+		"ru":"Проект создан при участии некоммерческого комьюнити «Свидетели Единорога», подробнее про них тут",
+		"en":"The project was created with the participation of the non-profit community Unicorn Witnesses. Read more "
+	},
+	"text-go-to-author" :{
+		"ru":"",
+		"en":""
+	},
+		"url-go-to-author" :{
+		"ru":"https://unicornwitnesses.com",
+		"en":"https://unicornwitnesses.com"
+	},
+
+	"text-how-create-project-telegram" :{
+		"ru":"Как создавался проект, открытый чат в Telegram",
+		"en":"How the project was created, an open chat in Telegram"
+	},
 };

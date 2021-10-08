@@ -1,5 +1,3 @@
-
-
 const init = () => {
 	let html = getTemplate(translations, 'en');
 	const container = document.querySelector('#content');
@@ -25,6 +23,7 @@ const init = () => {
 		const hash = window.location.hash.slice(1);
 		const activeOption = options.find(option => option.value === hash);
 		activeOption.selected = 'selected';
+		onSelectChange();
 	}
 
 	select.addEventListener('change', onSelectChange);
