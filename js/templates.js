@@ -25,7 +25,7 @@ const getTemplate = (data, language) => {
 									class="fab fa-paypal mr-1"></i>${t('cta-support-project')}</a>
 						</div>
 						<div class="col-md-1">
-							<select class="change-lang"
+							<select class="change-lang">
 								${options.join()}
 							</select>
 						</div>
