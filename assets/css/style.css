@@ -504,3 +504,12 @@ h6 small {
 	width: 100%;
 	object-fit: cover;
 }
+
+.change-lang{
+	color: #fff;
+	background: #000; 
+	border: solid #fff 2px ; 
+	border-radius: 10px; 
+	position: absolute; 
+	right: 0px; top: 0px;
+}
