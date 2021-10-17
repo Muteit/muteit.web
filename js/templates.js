@@ -12,8 +12,8 @@ const getTemplate = (data, language) => {
 			<div class="row">
 				<div class="donation cell">
 					<div class="row">
-						<div class="col-md-5">
-							<img src="assets/img/logo-muteit-sound-helper-new.svg" class="mb-2"
+						<div class="logo">
+							<img src="assets/img/logo-muteit-sound-helper.svg" class="mb-2"
 								alt="${t('media-logo-muteit-sound-helper')}">
 						</div>
 						<div class="col-md-3">

@@ -490,3 +490,17 @@ h6 small {
 		display: none;
 	}
 }
+
+.logo {
+	position: relative;
+	height: 60px;
+	width: 159px;
+	padding-left: 30px;
+	display: flex;
+}
+
+.logo>img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
