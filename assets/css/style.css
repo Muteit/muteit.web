@@ -211,16 +211,20 @@ h6 small {
     margin-bottom: 9px;
 }
 
+.app-links {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-1);
+}
+
 .app-links a {
     display: inline-block;
 }
 
-.app-links a~a {
-    margin-left: var(--size-2);
-}
-
 .app-links a img {
-    height: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn {
