@@ -176,7 +176,7 @@ h6 small {
 .tap-drop {
     width: 8%;
     position: absolute;
-    top: 70%;
+    top: 81%;
     left: 59%;
     opacity: 1;
 }
@@ -481,6 +481,9 @@ h6 small {
         margin-bottom: 0;
         top: 0;
     }
+    .tap .tap-drop {
+        top: 50%;
+    }
     .tap .tap-tube {
         margin-right: 0;
     }
@@ -563,6 +566,9 @@ h6 small {
 /*Middle statement for tablets. Need to good render of tap and water*/
 
 @media (min-width: 1023px) {
+    .tap .tap-drop {
+        top: 56%;
+    }
     .tap .tap-spray {
         top: 56%;
     }
