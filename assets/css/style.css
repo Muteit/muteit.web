@@ -501,16 +501,19 @@ h6 small {
         grid-template-areas: 'links-block links-block' 'tap content-area' 'tap content-area';
     }
     .row-link {
-        grid-template-columns: 134px 2fr 2fr 0.5fr;
+        grid-template-columns: 134px 177px 177px 0.5fr;
         grid-template-rows: 60px;
         grid-template-areas: 'logo telegram paypal lang';
-        justify-items: end;
-        text-align: right;
+        justify-content: space-between;
         width: 100%;
     }
     .donate-telegram,
     .donate-paypal {
         margin-top: 0;
+    }
+    .lang-select {
+        display: flex;
+        justify-self: end;
     }
     .header-control {
         margin-top: var(--size-4);
