@@ -70,6 +70,7 @@ h6 small {
 
 .donation {
     width: 100%;
+    grid-area: links-block;
 }
 
 .tap {
@@ -88,7 +89,6 @@ h6 small {
 .row-link {
     align-items: center;
     display: grid;
-    grid-area: links-block;
     grid-template-columns: 134px min-content;
     grid-template-rows: 60px 1fr 1fr;
     grid-template-areas: 'logo lang' 'telegram telegram' 'paypal paypal';
@@ -105,6 +105,8 @@ h6 small {
 .logo-link img {
     width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
 }
 
@@ -153,7 +155,7 @@ h6 small {
 }
 
 .tap {
-    width: 113px;
+    min-width: 113px;
     margin-bottom: 100px;
     position: relative;
     /* top: -50px; */
@@ -167,8 +169,8 @@ h6 small {
 
 .tap-tube {
     /* width: 69%; */
-    width: 113px;
-    /* position: relative; */
+    min-width: 113px;
+    position: relative;
 }
 
 .tap-drop {
@@ -182,7 +184,7 @@ h6 small {
 .tap-spray {
     width: 97%;
     position: absolute;
-    top: 59%;
+    top: 62%;
     left: 28%;
     opacity: 0;
 }
@@ -351,17 +353,7 @@ h6 small {
 
 /* header block */
 
-
-/* .header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
-
-.header-content {
-    flex-basis: 100%;
-}
+.header-content {}
 
 .header-control {
     margin-top: var(--size-3);
@@ -457,9 +449,9 @@ h6 small {
 /* media */
 
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 767px and up) */
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     h1 {
         font-size: 48px;
         line-height: 60px;
@@ -473,27 +465,48 @@ h6 small {
         padding-right: 32px;
     }
     .donation {
-        align-self: flex-start;
-        text-align: right;
-        padding-top: var(--size-4);
+        width: 100%;
+        padding-top: var(--size-2);
         padding-bottom: 0;
     }
     .donation br {
         display: none;
     }
     .tap {
-        width: 424px;
+        width: 243px;
         margin-bottom: 0;
         top: 0;
-        left: -120px;
+    }
+    .tap .tap-tube {
+        margin-right: 0;
+    }
+    .tap .tap-spray {
+        top: 50%;
+        width: 87%;
+        left: 33%;
+    }
+    .tap .tap-stream {
+        top: 50%;
     }
     .app-name {
         margin-bottom: var(--size-0);
     }
-    .header-content {
-        padding-left: 234px;
-        margin-top: -280px;
-        margin-bottom: 250px;
+    .header {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 160px max-content max-content;
+        grid-template-areas: 'links-block links-block' 'tap content-area' 'tap content-area';
+    }
+    .row-link {
+        grid-template-columns: 134px 2fr 2fr 0.5fr;
+        grid-template-rows: 60px;
+        grid-template-areas: 'logo telegram paypal lang';
+        justify-items: end;
+        text-align: right;
+        width: 100%;
+    }
+    .donate-telegram,
+    .donate-paypal {
+        margin-top: 0;
     }
     .header-control {
         margin-top: var(--size-4);
@@ -540,19 +553,44 @@ h6 small {
 }
 
 
+/*Middle statement for tablets. Need to good render of tap and water*/
+
+@media (min-width: 1023px) {
+    .tap .tap-spray {
+        top: 56%;
+    }
+    .tap .tap-stream {
+        top: 56%;
+    }
+    .main {
+        padding-top: var(--size-5);
+    }
+}
+
+
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
     .container {
         max-width: 1240px;
         padding-left: 420px;
         padding-right: 100px;
+        /* position: relative; */
     }
     .tap {
-        width: 424px;
+        /* width: 424px; */
         position: absolute;
-        top: 15px;
-        left: 0;
+        top: var(--size-2);
+        /* left: 0; */
+    }
+    .tap .tap-drop {
+        top: 80%;
+    }
+    .tap .tap-spray {
+        top: 80%;
+    }
+    .tap .tap-stream {
+        top: 82%;
     }
     .donation {
         flex-basis: 100%;
@@ -566,6 +604,7 @@ h6 small {
     }
     .header {
         padding-bottom: var(--size-5);
+        grid-template-columns: 1fr;
     }
     .header-content {
         padding-left: 0;
@@ -574,6 +613,9 @@ h6 small {
     }
     .btn:hover {
         background-color: var(--color-muted);
+    }
+    .main {
+        padding-top: 0;
     }
     .main .app-links img {
         height: 40px;
