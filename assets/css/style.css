@@ -453,6 +453,21 @@ h6 small {
 /* media */
 
 
+/*Middle statement for mobile devices*/
+
+@media (min-width: 374px) {
+    .tap .tap-spray {
+        top: 82%;
+    }
+    .tap .tap-stream {
+        top: 82%;
+    }
+    .tap .tap-spray img {
+        height: 50%;
+    }
+}
+
+
 /* Medium devices (tablets, 767px and up) */
 
 @media (min-width: 767px) {
@@ -488,12 +503,12 @@ h6 small {
         margin-right: 0;
     }
     .tap .tap-spray {
-        top: 50%;
+        top: 36%;
         width: 87%;
         left: 33%;
     }
     .tap .tap-stream {
-        top: 50%;
+        top: 36%;
     }
     .app-name {
         margin-bottom: var(--size-0);
@@ -570,10 +585,10 @@ h6 small {
         top: 56%;
     }
     .tap .tap-spray {
-        top: 56%;
+        top: 40%;
     }
     .tap .tap-stream {
-        top: 56%;
+        top: 43%;
     }
     .main {
         padding-top: var(--size-5);
