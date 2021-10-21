@@ -375,6 +375,22 @@ h6 small {
     overflow: hidden;
 }
 
+.soon_product {
+    padding: 30px;
+    background-image: url("../img/cover-what-is-next.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    Height: 375px;
+  }
+
+.soon_product_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
 .main section {
     margin-bottom: var(--size-6);
 }
