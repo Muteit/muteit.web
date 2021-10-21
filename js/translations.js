@@ -340,8 +340,8 @@ const translations = {
 
 
 	"text-ecosystem-text" :{
-		"ru":"В Mute it Health вы сможете",
-		"en":"At Mute it Health you will be able to"
+		"ru":"Mute it для кишечника",
+		"en":"Mute it for bowel"
 	},
 
 	"text-ecosystem-description-text" :{
