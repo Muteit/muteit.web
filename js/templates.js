@@ -90,17 +90,19 @@ const getTemplate = (data, language) => {
 
             <main class="main">
 
-                <h2>${t('text-H2-inclludes-app')}</h2>
+                <h2>${t('H2-what-includes-app-text')}</h2>
                 
                 <section>
 
                     <div class="soon_product_container">
-                        <article class="soon_product">
+                        <div class="soon_product">
                             ${t('update-text')}
-                        </article>
-                        <article class="soon_product">
+                            ${t('updates-description-text')}
+                        </div>
+                        <div class="soon_product">
                             ${t('ecosystem-text')}
-                        </article>
+                            ${t('ecosystem-description-text')}
+                        </div>
                     </div>
 
                 </section>

@@ -379,9 +379,9 @@ h6 small {
     padding: 30px;
     background-image: url("../img/cover-what-is-next.png");
     background-repeat: no-repeat;
-    background-position: center;
+/*    background-position: center;*/
     background-size: contain;
-    Height: 375px;
+    Height: 314px;
   }
 
 .soon_product_container {

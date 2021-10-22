@@ -156,19 +156,29 @@ const translations = {
 	},
 
 	//section-why-cover-sounds
-	"text-H2-inclludes-app": {
+	"H2-what-includes-app-text": {
 		"ru": "Что будет:",
-		"en": "What will be:",
+		"en": "What we plan to do:",
 	},
 
 	"update-text": {
-		"ru": "<h2>В Mute it </h2><li>Советы экспертов как не<br>навредить здоровью в туалете<li>Счётчик сохранённой воды за<br>время использования Mute it",
-		"en": "<h2>In Mute it </h2><li>Expert advice on how not to<br>harm your health in the toilet<li>Log of saved water for<br>the time you use Mute it",
+		"ru": "<h2>В Mute it </h2>",
+		"en": "<h2>In Mute it </h2>",
+	},	
+	
+	"updates-description-text": {
+		"ru": "<li>Советы экспертов как не<br>навредить здоровью в туалете<li>Счётчик сохранённой воды за<br>время использования Mute it",
+		"en": "<li>Expert advice on how not to<br>harm your health in the toilet<li>Counter of water saved during<br>use of Mute it",
 	},
 
 	"ecosystem-text": {
-		"ru": "<h2>Mute it для кишечника</h2><li>Health<li>Отследить нарушения в кишечнике<li>Отмечать изменения стула<li>Следить за микрофлорой<li>Следить влиянием медикаментов<li>Легко делиться с доктором",
-		"en": "<h2>Mute it for the gut</h2><li>Health<li>Track intestinal irregularities<li>Notice changes in stool<li>Keep track of the microflora<li>Track the effects of medications<li>Easy to share with your doctor",
+		"ru": "<h2>Mute it для<br>кишечника</h2>",
+		"en": "<h2>Mute it for<br>the gut</h2>",
+	},
+
+	"ecosystem-description-text": {
+		"ru": "<li>Health<li>Отследить нарушения в кишечнике<li>Отмечать изменения стула<li>Следить за микрофлорой<li>Следить влиянием медикаментов<li>Легко делиться с доктором",
+		"en": "<li>Health<li>Track bowel abnormalities<li>Notice changes in stool<li>Keep track of the microflora<li>Monitor the effects of your medication<li>Easy share with your doctor",
 	},
 
 	"text-H2-main-feature": {
