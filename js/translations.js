@@ -162,8 +162,8 @@ const translations = {
 	},
 
 	"update-text": {
-		"ru": "<h2>В Mute it </h2>",
-		"en": "<h2>In Mute it </h2>",
+		"ru": "В Mute it",
+		"en": "In Mute it",
 	},	
 	
 	"updates-description-text": {

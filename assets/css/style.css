@@ -384,6 +384,22 @@ h6 small {
     Height: 314px;
   }
 
+  .soon-text-font {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.soon-description-font {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+}
+
 .soon_product_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
