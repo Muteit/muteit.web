@@ -1,0 +1,29 @@
+{
+  "name": "muteit.web",
+  "version": "1.0.0",
+  "description": "a sound masking application",
+  "main": ".eleventy.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muteit/muteit.web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muteit/muteit.web/issues"
+  },
+  "homepage": "https://github.com/Muteit/muteit.web#readme"
+}

@@ -12,7 +12,7 @@ const getTemplate = (data, language) => {
                 <div class="donation cell">
                     <div class="row-link">
                         <a class="logo-link">
-                            <img src="assets/img/logo-muteit-sound-helper-new.svg" alt="${t('media-logo-muteit-sound-helper')}">
+                            <img src="static/img/logo-muteit-sound-helper-new.svg" alt="${t('media-logo-muteit-sound-helper')}">
                         </a>
                         <div class="donate-telegram">
                             <a href="https://t.me/muteitapp" target="_blank" class="bi bi-telegram">
@@ -33,16 +33,16 @@ const getTemplate = (data, language) => {
                 </div>
                 <div class="tap cell">
                     <div class="tap-tube">
-                        <img src="assets/img/tap.svg" alt="">
+                        <img src="static/img/tap.svg" alt="">
                     </div>
                     <div class="tap-drop">
-                        <img src="assets/img/drop.svg" alt="">
+                        <img src="static/img/drop.svg" alt="">
                     </div>
                     <div class="tap-spray">
-                        <img src="assets/img/spray.png" alt="">
+                        <img src="static/img/spray.png" alt="">
                     </div>
                     <div class="tap-stream">
-                        <img src="assets/img/stream.png" alt="">
+                        <img src="static/img/stream.png" alt="">
                     </div>
                 </div>
 
@@ -78,11 +78,11 @@ const getTemplate = (data, language) => {
 
                     <div class="app-links mt-3">
                         <a href="https://t.me/muteitapp" target="_blank">
-                            <img src="assets/img/apple_store.png" alt="download from google play mute it app">
+                            <img src="static/img/apple_store.png" alt="download from google play mute it app">
                         </a>
 
                         <a href="https://t.me/muteitapp" target="_blank">
-                            <img src="assets/img/google_play.png" alt="download from app store mute it app">
+                            <img src="static/img/google_play.png" alt="download from app store mute it app">
                         </a>
                     </div>
                 </div>
@@ -94,28 +94,28 @@ const getTemplate = (data, language) => {
 
                     <div class="row">
                         <div class="col-6 col-md-3 cell">
-                            <img src="assets/img/img_1.svg" alt="illustration of flying poop">
+                            <img src="static/img/img_1.svg" alt="illustration of flying poop">
                             <p>
                                 ${t('text-H1-main-text-on-the-page')}
                             </p>
                         </div>
 
                         <div class="col-6 col-md-3 cell">
-                            <img src="assets/img/img_2.svg" alt="">
+                            <img src="static/img/img_2.svg" alt="">
                             <p>
                                 ${t('text-hand-wash-text')}
                             </p>
                         </div>
 
                         <div class="col-6 col-md-3 cell">
-                            <img src="assets/img/img_3.svg" alt="">
+                            <img src="static/img/img_3.svg" alt="">
                             <p>
                                 ${t('text-mom-text')}
                             </p>
                         </div>
 
                         <div class="col-6 col-md-3 cell">
-                            <img src="assets/img/img_4.svg" alt="">
+                            <img src="static/img/img_4.svg" alt="">
                             <p>
                                 ${t('text-tap-text')}
                             </p>
@@ -128,7 +128,7 @@ const getTemplate = (data, language) => {
 
                     <div class="row">
                         <div class="col-6 col-md-12 cell">
-                            <img src="assets/img/img_5.svg" alt="">
+                            <img src="static/img/img_5.svg" alt="">
 
                             <div class="row">
                                 <div class="col-md-3">
@@ -140,21 +140,21 @@ const getTemplate = (data, language) => {
                         </div>
 
                         <div class="col-6 col-md-3 offset-md-3 cell">
-                            <img src="assets/img/img_6.svg" alt="">
+                            <img src="static/img/img_6.svg" alt="">
                             <p>
                                 ${t('text-happy-text')}
                             </p>
                         </div>
 
                         <div class="col-6 col-md-3 cell">
-                            <img src="assets/img/img_7.svg" alt="">
+                            <img src="static/img/img_7.svg" alt="">
                             <p>
                                 ${t('text-mobility-text')}
                             </p>
                         </div>
 
                         <div class="col-6 col-md-3 cell">
-                            <img src="assets/img/img_8.svg" alt="">
+                            <img src="static/img/img_8.svg" alt="">
                             <p>
                                 ${t('text-chilling-text')}
                             </p>
@@ -187,13 +187,13 @@ const getTemplate = (data, language) => {
                                     <div class="row">
                                         <div class="col-6">
                                             <a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
-                                                <img src="assets/img/icon_money.svg" alt=""><span>${t('text-H3-donating-text')}</span>
+                                                <img src="static/img/icon_money.svg" alt=""><span>${t('text-H3-donating-text')}</span>
                                             </a>
                                         </div>
 
                                         <div class="col-6">
                                             <a href="https://t.me/muteitapp" target="_blank" class="text-icon">
-                                                <img src="assets/img/icon_volunteeer.svg" alt="Перейти в чат telegram где общаются про социально значимый проект Muteitapp"><span>${t('url-volunteer-text')}</span>
+                                                <img src="static/img/icon_volunteeer.svg" alt="Перейти в чат telegram где общаются про социально значимый проект Muteitapp"><span>${t('url-volunteer-text')}</span>
                                             </a>
                                         </div>
                                     </div>
@@ -206,11 +206,11 @@ const getTemplate = (data, language) => {
 
                             <div class="app-links">
                                 <a href="https://t.me/muteitapp" target="_blank">
-                                    <img src="assets/img/apple_store.png" alt="">
+                                    <img src="static/img/apple_store.png" alt="">
                                 </a>
 
                                 <a href="https://t.me/muteitapp" target="_blank">
-                                    <img src="assets/img/google_play.png" alt="">
+                                    <img src="static/img/google_play.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -267,17 +267,17 @@ const getTemplate = (data, language) => {
                                         <div class="break"></div>
 
                                         <a href="https://t.me/muteitapp" target="_blank">
-                                            <img src="assets/img/apple_store.png" alt="">
+                                            <img src="static/img/apple_store.png" alt="">
                                         </a>
 
                                         <a href="https://t.me/muteitapp" target="_blank">
-                                            <img src="assets/img/google_play.png" alt="">
+                                            <img src="static/img/google_play.png" alt="">
                                         </a>
                                     </div>
                                 </div>
 
                                 <a href="https://www.tinkoff.ru/sl/59PjxlhKLLY" target="_blank" class="btn text-icon">
-                                    <img src="assets/img/icon_money.svg" alt="Переходите на сайт эквайера Tinkoff и ">
+                                    <img src="static/img/icon_money.svg" alt="Переходите на сайт эквайера Tinkoff и ">
                                     <span>${t('media-download-GooglePlay-icon')}</span>
                                 </a>
                             </div>
