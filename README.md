@@ -1,11 +1,26 @@
 # muteit.github.io
 that's a sound masking application 
 
-### `npm run start` or `npm run serve`
-Runs the app localy
+## Install project
+```
+npm i
+```
 
-### `npm run watch`
-Runs the app and build automatically when a template changes
+### Run the app localy
+```
+npm run start
+```
+or
+```
+npm run serve
+```
 
-### `npm run build`
-Runs the app
+### Run the app and build automatically when a template changes
+```
+npm run watch
+```
+
+### Runs the app
+```
+npm run build
+```
