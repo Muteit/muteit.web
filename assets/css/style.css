@@ -382,6 +382,19 @@ h6 small {
 /*    background-position: center;*/
     background-size: contain;
     Height: 314px;
+    position: relative;
+    width: fit-content;
+  }
+
+.soon_product::after {
+    content: url("../img/cover-img-cover-what-is-next-star.png");
+    position: absolute;
+    top: 36px;
+    right: 30px;
+}
+
+.soon_product:nth-child(2)::after {
+    display: none;
   }
 
   .soon-text-font {
@@ -663,7 +676,7 @@ h6 small {
         display: none;
     }
     .header {
-        padding-bottom: var(--size-5);
+        /*padding-bottom: var(--size-5);*/
         grid-template-columns: 1fr;
     }
     .header-content {

@@ -95,21 +95,25 @@ const getTemplate = (data, language) => {
                 <section>
 
                     <div class="soon_product_container">
-                        <div class="soon_product">
-                            <p class="soon-text-font">
-                            ${t('update-text')}
-                            </p>
-                            <p class="soon-description-font">
-                            ${t('updates-description-text')}
-                            </p>
+                        <div>
+                            <div class="soon_product">
+                                <p class="soon-text-font">
+                                    ${t('update-text')}
+                                </p>
+                                <p class="soon-description-font">
+                                    ${t('updates-description-text')}
+                                </p>
+                            </div>
                         </div>
-                        <div class="soon_product">
-                            <p class="soon-text-font">
-                            ${t('ecosystem-text')}
-                            </p>
-                            <p class="soon-description-font">
-                            ${t('ecosystem-description-text')}
-                            </p>
+                        <div>
+                            <div class="soon_product">
+                                <p class="soon-text-font">
+                                    ${t('ecosystem-text')}
+                                </p>
+                                <p class="soon-description-font">
+                                    ${t('ecosystem-description-text')}
+                                </p>
+                            </div>
                         </div>
                     </div>
 
