@@ -383,34 +383,47 @@ h6 small {
     background-size: contain;
     Height: 314px;
     position: relative;
-    width: fit-content;
+    /*width: fit-content;*/
   }
 
-.soon_product::after {
+.soon_product_update::after {
     content: url("../img/cover-img-cover-what-is-next-star.png");
     position: absolute;
     top: 36px;
     right: 30px;
 }
 
-.soon_product:nth-child(2)::after {
-    display: none;
-  }
+.soon_product_update::before {
+    content: "FREE";
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    transform: rotate(-45deg);
+}
 
-  .soon-text-font {
+.soon_product_ecosystem::before {
+    content: url("../img/health.svg");
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.soon-text-font {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 1.2;
 }
 
 .soon-description-font {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 0 20px;
 }
 
 .soon_product_container {
@@ -418,6 +431,32 @@ h6 small {
     grid-template-columns: 1fr 1fr;
     column-gap: 22px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media (max-width: 1200px) {
+    .soon_product_update::before {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .soon-text-font {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .soon-text-font {
+        font-size: 22px;
+    }
+
+    .soon_product {
+        height: 253px;
+    }
+
+    .soon_product_update::before {
+        bottom: 30px;
+        right: 40px;
+    }
 }
 
 .main section {

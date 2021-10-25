@@ -167,18 +167,18 @@ const translations = {
 	},	
 	
 	"updates-description-text": {
-		"ru": "<li>Советы экспертов как не<br>навредить здоровью в туалете<li>Счётчик сохранённой воды за<br>время использования Mute it",
-		"en": "<li>Expert advice on how not to<br>harm your health in the toilet<li>Counter of water saved during<br>use of Mute it",
+		"ru": "<li>Советы экспертов как не<br>навредить здоровью в туалете</li><li>Счётчик сохранённой воды за<br>время использования Mute it</li>",
+		"en": "<li>Expert advice on how not to<br>harm your health in the toilet</li><li>Counter of water saved during<br>use of Mute it</li>",
 	},
 
 	"ecosystem-text": {
-		"ru": "<h2>Mute it для<br>кишечника</h2>",
-		"en": "<h2>Mute it for<br>the gut</h2>",
+		"ru": "Mute it для<br>кишечника",
+		"en": "Mute it for<br>the gut",
 	},
 
 	"ecosystem-description-text": {
-		"ru": "<li>Health<li>Отследить нарушения в кишечнике<li>Отмечать изменения стула<li>Следить за микрофлорой<li>Следить влиянием медикаментов<li>Легко делиться с доктором",
-		"en": "<li>Health<li>Track bowel abnormalities<li>Notice changes in stool<li>Keep track of the microflora<li>Monitor the effects of your medication<li>Easy share with your doctor",
+		"ru": "<li>Health</li><li>Отследить нарушения в кишечнике</li><li>Отмечать изменения стула</li><li>Следить за микрофлорой</li><li>Следить влиянием медикаментов</li><li>Легко делиться с доктором</li>",
+		"en": "<li>Health</li><li>Track bowel abnormalities</li><li>Notice changes in stool</li><li>Keep track of the microflora</li><li>Monitor the effects of your medication</li><li>Easy share with your doctor</li>",
 	},
 
 	"text-H2-main-feature": {
