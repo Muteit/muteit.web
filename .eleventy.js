@@ -1,8 +1,6 @@
 module.exports = (config) => {
     config.addPassthroughCopy('./static');
-    config.addPassthroughCopy('./src/js/**/*');
     config.addPassthroughCopy('./src/styles/**/*');
-    config.addPassthroughCopy('./src/*');
     config.addPassthroughCopy('./src/*');
     return {
         markdownTemplateEngine: 'njk',

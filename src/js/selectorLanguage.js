@@ -1,4 +1,8 @@
-const init = () => {
+import { getTemplate } from './templates';
+import { translations } from './translations';
+import { initSounds } from './sounds';
+
+export const init = () => {
 	let html = getTemplate(translations, 'en');
 	const container = document.querySelector('#content');
 	container.innerHTML = html;
@@ -29,5 +33,3 @@ const init = () => {
 	select.addEventListener('change', onSelectChange);
 	window.addEventListener('hashchange', changeSelectedOption);
 };
-
-init();

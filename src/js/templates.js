@@ -1,4 +1,4 @@
-const getTemplate = (data, language) => {
+export const getTemplate = (data, language) => {
     const t = (tag) => data?.[tag]?.[language];
 
     const options = [
