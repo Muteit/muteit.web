@@ -89,7 +89,38 @@ const getTemplate = (data, language) => {
             </header>
 
             <main class="main">
+
+                <h2>${t('H2-what-includes-app-text')}</h2>
+                
                 <section>
+
+                    <div class="soon_product_container">
+                        <div>
+                            <div class="soon_product soon_product_update">
+                                <h3 class="soon-text-font">
+                                    ${t('update-text')}
+                                </h3>
+                                <ul class="soon-description-font">
+                                    ${t('updates-description-text')}
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="soon_product soon_product_ecosystem">
+                                <h3 class="soon-text-font">
+                                    ${t('ecosystem-text')}
+                                </h3>
+                                <ul class="soon-description-font">
+                                    ${t('ecosystem-description-text')}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+
                     <h2>${t('text-H2-main-feature')}</h2>
 
                     <div class="row">
