@@ -434,29 +434,66 @@ h6 small {
 }
 
 @media (max-width: 1200px) {
-    .soon_product_update::before {
-        bottom: 20px;
-        right: 20px;
-    }
+	.soon_product_container {
+		grid-template-columns: unset;
+		row-gap: 20px;
+	}
 
-    .soon-text-font {
-        font-size: 30px;
-    }
+	.soon_product_update::before {
+			bottom: 20px;
+			right: 20px;
+	}
+
+	.soon-text-font {
+			font-size: 30px;
+	}
+
+	.soon_product {
+    height: 390px;
+    width: 450px;
+	}
+
+	.soon_product_ecosystem::before {
+		top: 50px;
+		right: 60px;
+	}
+
+	.soon_product_update::after {
+		top: 40px;
+		right: 80px;
+	}
+
+	.soon_product_update::before {
+		/* display: none; */
+		bottom: 50px;
+		right: 70px;
+	}
 }
 
 @media (max-width: 768px) {
     .soon-text-font {
-        font-size: 22px;
+      font-size: 20px;
+			margin-bottom: 10px;
     }
+
+		.soon-description-font {
+			font-size: 14px;
+	}
 
     .soon_product {
-        height: 253px;
+      height: 263px;
+			width: 320px;
+			padding-right: 40px;
     }
 
-    .soon_product_update::before {
-        bottom: 30px;
-        right: 40px;
-    }
+		.soon_product_ecosystem::before {
+			top: 10px;
+			right: 40px;
+		}
+
+		.soon_product_update::after {
+			display: none;
+		}
 }
 
 .main section {
