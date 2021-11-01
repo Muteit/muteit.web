@@ -91,7 +91,7 @@ const getTemplate = (data, language) => {
             <main class="main">
 
                 <h2>${t('H2-what-includes-app-text')}</h2>
-                
+
                 <section>
 
                     <div class="soon_product_container">
@@ -194,57 +194,37 @@ const getTemplate = (data, language) => {
                 </section>
 
                 <section>
-                    <h2>${t('text-section-what-is-next')}</h2>
-
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h6>В Mute It</h6>
-                                    <p>${t('text-updates-description-text')}</p>
-                                </div>
+											<div class="col main-help">
+											<h3>${t('text-H3-donating-text')}</h3>
 
-                                <div class="col-6">
-                                    <h6>
-                                        В Mute it <span class="badge">Pro</span><br>
-                                        <small class="text-muted">${t('text-in-process-text')}</small>
-                                    </h6>
-                                    <p>${t('text-ecosystem-description-text')}</p>
-                                </div>
+											<div class="row">
+													<div class="col-6">
+															<a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
+																	<img src="assets/img/icon_money.svg" alt=""><span>${t('text-H3-donating-text')}</span>
+															</a>
+													</div>
 
-                                <div class="col main-help">
-                                    <h3>${t('text-H3-donating-text')}</h3>
+													<div class="col-6">
+															<a href="https://t.me/muteitapp" target="_blank" class="text-icon">
+																	<img src="assets/img/icon_volunteeer.svg" alt="Перейти в чат telegram где общаются про социально значимый проект Muteitapp"><span>${t('url-volunteer-text')}</span>
+															</a>
+													</div>
+											</div>
+									</div>
+									<div class="col-md-5 offset-md-1 download">
+											<strong>${t('text-download-text')}</strong>
 
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
-                                                <img src="assets/img/icon_money.svg" alt=""><span>${t('text-H3-donating-text')}</span>
-                                            </a>
-                                        </div>
+											<div class="app-links">
+													<a href="https://t.me/muteitapp" target="_blank">
+															<img src="assets/img/apple_store.png" alt="">
+													</a>
 
-                                        <div class="col-6">
-                                            <a href="https://t.me/muteitapp" target="_blank" class="text-icon">
-                                                <img src="assets/img/icon_volunteeer.svg" alt="Перейти в чат telegram где общаются про социально значимый проект Muteitapp"><span>${t('url-volunteer-text')}</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 offset-md-1">
-                            <strong>${t('text-download-text')}</strong>
-
-                            <div class="app-links">
-                                <a href="https://t.me/muteitapp" target="_blank">
-                                    <img src="assets/img/apple_store.png" alt="">
-                                </a>
-
-                                <a href="https://t.me/muteitapp" target="_blank">
-                                    <img src="assets/img/google_play.png" alt="">
-                                </a>
-                            </div>
-                        </div>
+													<a href="https://t.me/muteitapp" target="_blank">
+															<img src="assets/img/google_play.png" alt="">
+													</a>
+											</div>
+									</div>
                     </div>
                 </section>
             </main>

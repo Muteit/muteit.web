@@ -433,6 +433,10 @@ h6 small {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.download {
+	margin-top: var(--size-4);
+}
+
 @media (max-width: 1200px) {
 	.soon_product_container {
 		grid-template-columns: unset;
