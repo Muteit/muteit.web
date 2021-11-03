@@ -300,6 +300,7 @@ h6 small {
     right: 0;
     bottom: 0;
     left: 0;
+		display: none;
 }
 
 .player-box {
@@ -582,7 +583,7 @@ h6 small {
 
 @media (min-width: 374px) {
     .tap .tap-spray {
-        top: 82%;
+        top: 70%;
     }
     .tap .tap-stream {
         top: 82%;
