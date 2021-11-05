@@ -377,7 +377,7 @@ h6 small {
 
 .soon_product {
     padding: 30px;
-    background-image: url("../img/cover-what-is-next.png");
+    background-image: url("../static/img/cover-what-is-next.png");
     background-repeat: no-repeat;
 /*    background-position: center;*/
     background-size: contain;
@@ -387,7 +387,7 @@ h6 small {
   }
 
 .soon_product_update::after {
-    content: url("../img/cover-img-cover-what-is-next-star.png");
+    content: url("../static/img/cover-img-cover-what-is-next-star.png");
     position: absolute;
     top: 36px;
     right: 30px;
