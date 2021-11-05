@@ -375,6 +375,131 @@ h6 small {
     overflow: hidden;
 }
 
+.soon_product {
+    padding: 30px;
+    background-image: url("../img/cover-what-is-next.png");
+    background-repeat: no-repeat;
+/*    background-position: center;*/
+    background-size: contain;
+    Height: 314px;
+    position: relative;
+    /*width: fit-content;*/
+  }
+
+.soon_product_update::after {
+    content: url("../img/cover-img-cover-what-is-next-star.png");
+    position: absolute;
+    top: 36px;
+    right: 30px;
+}
+
+.soon_product_update::before {
+    content: "FREE";
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    transform: rotate(-45deg);
+}
+
+.soon_product_ecosystem::before {
+    content: url("../img/health.svg");
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.soon-text-font {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.soon-description-font {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.soon_product_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.download {
+	margin-top: var(--size-4);
+}
+
+@media (max-width: 1200px) {
+	.soon_product_container {
+		grid-template-columns: unset;
+		row-gap: 20px;
+	}
+
+	.soon_product_update::before {
+			bottom: 20px;
+			right: 20px;
+	}
+
+	.soon-text-font {
+			font-size: 30px;
+	}
+
+	.soon_product {
+    height: 390px;
+    width: 450px;
+	}
+
+	.soon_product_ecosystem::before {
+		top: 50px;
+		right: 60px;
+	}
+
+	.soon_product_update::after {
+		top: 40px;
+		right: 80px;
+	}
+
+	.soon_product_update::before {
+		/* display: none; */
+		bottom: 50px;
+		right: 70px;
+	}
+}
+
+@media (max-width: 768px) {
+    .soon-text-font {
+      font-size: 20px;
+			margin-bottom: 10px;
+    }
+
+		.soon-description-font {
+			font-size: 14px;
+	}
+
+    .soon_product {
+      height: 263px;
+			width: 320px;
+			padding-right: 40px;
+    }
+
+		.soon_product_ecosystem::before {
+			top: 10px;
+			right: 40px;
+		}
+
+		.soon_product_update::after {
+			display: none;
+		}
+}
+
 .main section {
     margin-bottom: var(--size-6);
 }
@@ -631,7 +756,7 @@ h6 small {
         display: none;
     }
     .header {
-        padding-bottom: var(--size-5);
+        /*padding-bottom: var(--size-5);*/
         grid-template-columns: 1fr;
     }
     .header-content {

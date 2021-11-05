@@ -6,7 +6,7 @@ export const getTemplate = (data, language) => {
         `<option value="ru" ${language === 'ru' ? 'selected' : ''}>RU</option>`
     ];
 
-    const html = `
+    return (`
 	<div class="container">
             <header class="header">
                 <div class="donation cell">
@@ -89,7 +89,38 @@ export const getTemplate = (data, language) => {
             </header>
 
             <main class="main">
+
+                <h2>${t('H2-what-includes-app-text')}</h2>
+
                 <section>
+
+                    <div class="soon_product_container">
+                        <div>
+                            <div class="soon_product soon_product_update">
+                                <h3 class="soon-text-font">
+                                    ${t('update-text')}
+                                </h3>
+                                <ul class="soon-description-font">
+                                    ${t('updates-description-text')}
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="soon_product soon_product_ecosystem">
+                                <h3 class="soon-text-font">
+                                    ${t('ecosystem-text')}
+                                </h3>
+                                <ul class="soon-description-font">
+                                    ${t('ecosystem-description-text')}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+
                     <h2>${t('text-H2-main-feature')}</h2>
 
                     <div class="row">
@@ -163,57 +194,37 @@ export const getTemplate = (data, language) => {
                 </section>
 
                 <section>
-                    <h2>${t('text-section-what-is-next')}</h2>
-
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h6>В Mute It</h6>
-                                    <p>${t('text-updates-description-text')}</p>
-                                </div>
+											<div class="col main-help">
+											<h3>${t('text-H3-donating-text')}</h3>
 
-                                <div class="col-6">
-                                    <h6>
-                                        В Mute it <span class="badge">Pro</span><br>
-                                        <small class="text-muted">${t('text-in-process-text')}</small>
-                                    </h6>
-                                    <p>${t('text-ecosystem-description-text')}</p>
-                                </div>
+											<div class="row">
+													<div class="col-6">
+															<a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
+																	<img src="assets/img/icon_money.svg" alt=""><span>${t('text-H3-donating-text')}</span>
+															</a>
+													</div>
 
-                                <div class="col main-help">
-                                    <h3>${t('text-H3-donating-text')}</h3>
+													<div class="col-6">
+															<a href="https://t.me/muteitapp" target="_blank" class="text-icon">
+																	<img src="assets/img/icon_volunteeer.svg" alt="Перейти в чат telegram где общаются про социально значимый проект Muteitapp"><span>${t('url-volunteer-text')}</span>
+															</a>
+													</div>
+											</div>
+									</div>
+									<div class="col-md-5 offset-md-1 download">
+											<strong>${t('text-download-text')}</strong>
 
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <a href="https://paypal.me/olianayda" target="_blank" class="text-icon">
-                                                <img src="static/img/icon_money.svg" alt=""><span>${t('text-H3-donating-text')}</span>
-                                            </a>
-                                        </div>
+											<div class="app-links">
+													<a href="https://t.me/muteitapp" target="_blank">
+															<img src="assets/img/apple_store.png" alt="">
+													</a>
 
-                                        <div class="col-6">
-                                            <a href="https://t.me/muteitapp" target="_blank" class="text-icon">
-                                                <img src="static/img/icon_volunteeer.svg" alt="Перейти в чат telegram где общаются про социально значимый проект Muteitapp"><span>${t('url-volunteer-text')}</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 offset-md-1">
-                            <strong>${t('text-download-text')}</strong>
-
-                            <div class="app-links">
-                                <a href="https://t.me/muteitapp" target="_blank">
-                                    <img src="static/img/apple_store.png" alt="">
-                                </a>
-
-                                <a href="https://t.me/muteitapp" target="_blank">
-                                    <img src="static/img/google_play.png" alt="">
-                                </a>
-                            </div>
-                        </div>
+													<a href="https://t.me/muteitapp" target="_blank">
+															<img src="assets/img/google_play.png" alt="">
+													</a>
+											</div>
+									</div>
                     </div>
                 </section>
             </main>
@@ -286,7 +297,5 @@ export const getTemplate = (data, language) => {
                 </div>
             </div>
         </div>
-	`;
-
-    return html;
+	`);
 };
