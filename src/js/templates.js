@@ -1,7 +1,7 @@
 export const getTemplate = (data, language) => {
     const t = (tag) => data?.[tag]?.[language];
 
-    const options = [
+   /* const options = [
         `<option value="en" ${language === 'en' ? 'selected' : ''}>EN</option>`,
         `<option value="ru" ${language === 'ru' ? 'selected' : ''}>RU</option>`
     ];
@@ -298,4 +298,5 @@ export const getTemplate = (data, language) => {
             </div>
         </div>
 	`);
+    */
 };

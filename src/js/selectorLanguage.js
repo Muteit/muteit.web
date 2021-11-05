@@ -4,21 +4,17 @@ import { initSounds } from './sounds';
 
 export const init = () => {
 	let html = getTemplate(translations, 'en');
-	const container = document.querySelector('#content');
-	container.innerHTML = html;
+	//const container = document.querySelector('#content');
+	//container.innerHTML = html;
 
-	let select = document.querySelector('.change-lang');
-	let options = Array.from(select.querySelectorAll('option'));
+	const select = document.querySelector('[data-js-select="change-lang"]');
+	const options = Array.from(select.querySelectorAll('option'));
 
 	const onSelectChange = () => {
 		const selectedLanguage = options[select.selectedIndex].value
 		window.location.hash = selectedLanguage;
-		console.log(select);
 		html = getTemplate(translations, selectedLanguage);
 		container.innerHTML = html;
-		select = document.querySelector('.change-lang');
-		options = Array.from(select.querySelectorAll('option'));
-		select.addEventListener('change', onSelectChange);
 		audio.pause();
 		initSounds();
 	}

@@ -21,9 +21,10 @@ layout: 'layouts/base.html'
 								</a>
 						</div>
 						<div class="lang-select">
-							<select class="change-lang mt-2" style="color: #fff; background: #000; border: solid #fff 2px ; border-radius: 10px;">
-									${options.join()}
-								</select>
+							<select data-js-select="change-lang" class="change-lang mt-2" style="color: #fff; background: #000; border: solid #fff 2px ; border-radius: 10px;">
+								<option value="en">EN</option>
+								<option value="ru">RU</option>`
+							</select>
 						</div>
 					</div>
 				</div>
@@ -46,8 +47,8 @@ layout: 'layouts/base.html'
 				<div class="container header-content">
 					<div class="row">
 						<div class="col-md-12">
-							<span class="app-name">${t('text-muteit-helper')}</span>
-							<h1>${t('text-H1-main-text-on-the-page')}</h1>
+							<span class="app-name" data-textblock="text-muteit-helper"></span>
+							<h1 data-textblock="text-H1-main-text-on-the-page"></h1>
 						</div>
 					</div>
 
