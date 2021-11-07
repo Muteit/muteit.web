@@ -4,7 +4,7 @@ const getTranslations = async () => {
 	return translations;
 };
 
-const translations = {
+export const translations = {
 	"media-logo-muteit-sound-helper": {
 		"ru": "Логотип Mute it app в виде перевёрнутой на бок капли. Капля состоит из полукругов, символизирующих волны",
 		"en": "The Mute it app logo is in the form of a drop turned upside down on its side. The blob is made up of semicircles symbolising waves",

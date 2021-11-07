@@ -1,4 +1,4 @@
-const initSounds = () => {
+export const initSounds = () => {
 	let d = document;
 	let audio = d.querySelector('#audio');
 	let tap = d.querySelector('.tap');
@@ -72,5 +72,3 @@ const initSounds = () => {
 		passive: true
 	});
 }
-
-initSounds();

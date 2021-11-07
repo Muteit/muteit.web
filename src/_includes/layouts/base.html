@@ -39,27 +39,27 @@
 	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<title>Mute It – toilet sound helper</title>
+	<link rel="manifest" href="./site.webmanifest">
+	<title>{{title}}</title>
 	<meta property="og:site_name" content="muteit.app">
 	<meta property="og:image:type" content="website">
 	<meta property="og:locale" content="ru_RU">
 	<meta property="og:url" content="https://muteit.app/">
 	<meta property="og:title" content="Mute it app — приложение для комфортного пребывания в туалете">
 	<meta property="og:description" content="Приятный звук воды поможет заглушить ваши и чужие туалетные звуки, поможет абстрагироваться в некомфортном туалете, остаться наедине с собой">
-	<meta property="og:image" content="https://muteit.app/assets/img/og-img-website-tap-with-text-cta-logo.jpg">
+	<meta property="og:image" content="https://muteit.app/static/img/og-img-website-tap-with-text-cta-logo.jpg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="vk:image" content="https://muteit.app/assets/img/vk-img-website-tap-with-text-cta-logo.jpg">
+	<meta property="vk:image" content="https://muteit.app/static/img/vk-img-website-tap-with-text-cta-logo.jpg">
 	<meta property="vk:image:width" content="510">
 	<meta property="vk:image:height" content="228">
-	<meta property="twitter:image" content="https://muteit.app/assets/img/twitter-img-website-tap-with-text-cta-logo.jpg">
+	<meta property="twitter:image" content="https://muteit.app/static/img/twitter-img-website-tap-with-text-cta-logo.jpg">
 	<meta property="twitter:image:width" content="1024">
 	<meta property="twitter:image:height" content="512">
 	<meta property="fb:app_id" content="muteitapp">
@@ -68,15 +68,13 @@
 </head>
 
 <body>
-	<div id="content">
-	</div>
-	<script src="js/templates.js"></script>
-	<script src="js/translations.js"></script>
-	<script src="js/selectorLanguage.js"></script>
-	<audio id="audio" preload="auto" loop>
-		<source src="assets/audio/watertap.mp3" type="audio/mp3">
+
+    {{ content | safe }}
+    <audio id="audio" preload="auto" loop>
+	    <source src="static/assets/audio/watertap.mp3" type="audio/mp3">
 	</audio>
-	<script src="assets/js/main.js"></script>
+    
+	<script src="js/index.js"></script>
 </body>
 
 </html>
