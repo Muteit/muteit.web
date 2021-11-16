@@ -1,20 +1,23 @@
-import { getTemplate } from './templates';
 import { translations } from './translations';
 import { initSounds } from './sounds';
 
 export const init = () => {
-	let html = getTemplate(translations, 'en');
-	//const container = document.querySelector('#content');
-	//container.innerHTML = html;
-
+	const textblocks = document.querySelectorAll('[data-textblock]')
 	const select = document.querySelector('[data-js-select="change-lang"]');
 	const options = Array.from(select.querySelectorAll('option'));
+
+	const changeLanguage = (lang) => {
+		[...textblocks].forEach(textblock => {
+			const tag = textblock.dataset.textblock;
+			const t = (tag) => translations?.[tag]?.[lang];
+			textblock.innerText = t(tag);
+		})
+	}
 
 	const onSelectChange = () => {
 		const selectedLanguage = options[select.selectedIndex].value
 		window.location.hash = selectedLanguage;
-		html = getTemplate(translations, selectedLanguage);
-		container.innerHTML = html;
+		changeLanguage(selectedLanguage);
 		audio.pause();
 		initSounds();
 	}
