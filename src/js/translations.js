@@ -1,9 +1,3 @@
-const getTranslations = async () => {
-	const response = await fetch('https://muteit-web-multi-language-db.maximlitvinov.workers.dev');
-	const translations = await response.json();
-	return translations;
-};
-
 export const translations = {
 	"media-logo-muteit-sound-helper": {
 		"ru": "Логотип Mute it app в виде перевёрнутой на бок капли. Капля состоит из полукругов, символизирующих волны",

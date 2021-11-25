@@ -1,12 +1,19 @@
-import { translations } from './translations';
 import { initSounds } from './sounds';
 
 export const init = () => {
 	const textblocks = document.querySelectorAll('[data-textblock]')
 	const select = document.querySelector('[data-js-select="change-lang"]');
 	const options = Array.from(select.querySelectorAll('option'));
+	let translations = {};
+	
+	async function getTranslations() {
+			const endpoint = 'https://translations-system.maximlitvinov.workers.dev';
+			const { result } = await fetch(endpoint).then((res) => res.json());
+			translations = result;
+			setLanguage('ru_ru');
+	}
 
-	const changeLanguage = (lang) => {
+	const setLanguage = (lang) => {
 		[...textblocks].forEach(textblock => {
 			const tag = textblock.dataset.textblock;
 			const t = (tag) => translations?.[tag]?.[lang];
@@ -17,7 +24,7 @@ export const init = () => {
 	const onSelectChange = () => {
 		const selectedLanguage = options[select.selectedIndex].value
 		window.location.hash = selectedLanguage;
-		changeLanguage(selectedLanguage);
+		setLanguage(selectedLanguage);
 		audio.pause();
 		initSounds();
 	}
@@ -28,7 +35,7 @@ export const init = () => {
 		activeOption.selected = 'selected';
 		onSelectChange();
 	}
-
+	getTranslations();
 	select.addEventListener('change', onSelectChange);
 	window.addEventListener('hashchange', changeSelectedOption);
 };
