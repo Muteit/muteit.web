@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} muteit.ru
-RewriteRule (.*) https://muteit.app/$1 [R=301,L]
