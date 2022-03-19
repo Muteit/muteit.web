@@ -1,0 +1,64 @@
+:root {
+  --color-main: #fff;
+  --color-opposite: #000;
+  --color-muted: #a6a6a6;
+  --color-main-opacity: rgba(255, 255, 255, 0.3);
+  --size-1: 8px;
+  --size-2: 16px;
+  --size-3: 24px;
+  --size-4: 32px;
+  --size-5: 48px;
+  --size-6: 84px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--color-main);
+  font-size: 0.875rem;
+  line-height: 1.142857142857143;
+  font-family: Roboto;
+  background-color: var(--color-opposite);
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  transition: color 0.1s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: var(--size-3);
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: var(--size-3);
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: var(--size-2);
+}
+
+h6 small {
+  font-weight: 400;
+}
