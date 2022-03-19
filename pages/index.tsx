@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Script from 'next/script';
+import script from 'next/script';
 import { ChangeEvent, useContext, useEffect } from 'react';
 import { languageContext } from '../contexts/language';
 import useTranslation from '../hooks/useTranslation';
@@ -85,14 +85,14 @@ const Home: NextPage = () => {
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <Script dangerouslySetInnerHTML={{
+        <script dangerouslySetInnerHTML={{
           __html: `
           (function(m, e, t, r, i, k, a) {
             m[i] = m[i] || function() {
               (m[i].a = m[i].a || []).push(arguments)
             };
             m[i].l = 1 * new Date();
-            k = e.createElementranslate(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
           })
           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
           ym(80088001, "init", {
@@ -103,11 +103,11 @@ const Home: NextPage = () => {
             ecommerce: "dataLayer"
           });`
         }}>
-        </Script>
+        </script>
         {/* <!-- /Yandex.Metrika counter --> */}
         {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-33FDFN66NC"></Script>
-        <Script dangerouslySetInnerHTML={{
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-33FDFN66NC"></script>
+        <script dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || [];
           function gtag() {
             dataLayer.push(arguments);
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
           gtag('js', new Date());
           gtag('config', 'G-33FDFN66NC');`
         }}>
-        </Script>
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
         <meta property="twitter:image:height" content="512" />
         <meta property="fb:app_id" content="muteitapp" />
         <link rel="shortcut icon" href="favicon.ico" />
-        <Script src="https://kit.fontawesome.com/afc3bbd3da.js" crossOrigin="anonymous"></Script>
+        <script src="https://kit.fontawesome.com/afc3bbd3da.js" crossOrigin="anonymous"></script>
       </Head>
       <div id="content">
         <div className="container">
