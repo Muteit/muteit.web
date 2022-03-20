@@ -203,12 +203,10 @@
 }
 
 .bi-telegram {
-  background-color: #000;
   color: #fff;
 }
 
 .bi-credit-card {
-  background-color: #000;
   color: #fff;
 }
 
@@ -221,12 +219,10 @@
 }
 
 .bi-telegram {
-  background-color: #000;
   color: #fff;
 }
 
 .bi-credit-card {
-  background-color: #000;
   color: #fff;
 }
 
@@ -735,4 +731,11 @@ margin-top: var(--size-4);
   .player .break {
       display: none;
   }
+}
+
+.change-lang {
+	color: #fff;
+	background: #7685c2;
+	border: 1px solid white;
+	border-radius: 10px;
 }

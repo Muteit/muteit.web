@@ -20,7 +20,7 @@ const translations: TranslationsData = {
   },
   "text-muteit-helper": {
     [Language.RU]: "Mute it app – карманный помощник в туалете",
-    [Language.EN]: "Mute it app - a pocket-sized toilet assistant",
+    [Language.EN]: "Mute it app - a pocket-sized restroom assistant",
   },
   "cta-support-project": {
     [Language.RU]: "Поддержать проект через PayPal",
@@ -43,7 +43,7 @@ const translations: TranslationsData = {
 		- Советы экспертов как  и не навредить здоровью в туалете
 		- Счётчик сохранённой воды за время использования Mute it`,
     [Language.EN]: `At Mute It
-		- Expert advice on how not to harm your health in the toilet
+		- Expert advice on how not to harm your health in the restroom
 		- Counter of water saved during use of Mute it`,
   },
   "text-tracking-text": {
@@ -108,8 +108,8 @@ const translations: TranslationsData = {
 
   //Section-product presentation
   "text-H1-main-text-on-the-page": {
-    [Language.RU]: "Воспользуйтесь шумом воды, чтобы посещать туалет без стеснения",
-    [Language.EN]: "Take advantage of the noise of the water to visit the toilet without embarrassment",
+    [Language.RU]: "Включите громкий звук воды и забудьте о волнении про туалетные звуки",
+    [Language.EN]: "Turn on the loud sound of the dripping water and forget about the restroom noises anxiety!",
   },
 
   "cta-turn-off": {
@@ -139,7 +139,7 @@ const translations: TranslationsData = {
 
   "updates-description-text": {
     [Language.RU]: "<li>Советы экспертов как не<br>навредить здоровью в туалете</li><li>Счётчик сохранённой воды за<br>время использования Mute it</li>",
-    [Language.EN]: "<li>Expert advice on how not to<br>harm your health in the toilet</li><li>Counter of water saved during<br>use of Mute it</li>",
+    [Language.EN]: "<li>Expert advice on how not to<br>harm your health in the restroom</li><li>Counter of water saved during<br>use of Mute it</li>",
   },
 
   "ecosystem-text": {
@@ -215,7 +215,7 @@ const translations: TranslationsData = {
 
   "text-balloon-text": {
     [Language.RU]: "Посещать туалет в гостях можно спокойнее. Muteit замаскирует журчания и всплески.",
-    [Language.EN]: "Visiting the guest toilet can be more relaxing. Muteit disguises murmurs and splashes.",
+    [Language.EN]: "Visiting the guest restroom can be more relaxing. Muteit disguises murmurs and splashes.",
   },
 
   "media-hand-wash-picture": {
@@ -225,7 +225,7 @@ const translations: TranslationsData = {
 
   "text-hand-wash-text": {
     [Language.RU]: "Ваши друзья знают, что вы пришли к ним в туалет, но это не повод их стеснять. Пусть думают, что вы долго моете руки.",
-    [Language.EN]: "Your friends know that you have come to their toilet, but that is no reason to embarrass them. Let them think you are taking a long time to wash your hands.",
+    [Language.EN]: "Your friends know that you have come to their restroom, but that is no reason to embarrass them. Let them think you are taking a long time to wash your hands.",
   },
 
   "media-mom-picture": {
@@ -235,7 +235,7 @@ const translations: TranslationsData = {
 
   "text-mom-text": {
     [Language.RU]: "Мы знаем, как неловко бывает знакомиться с родителями вашей половинки, это не повод бояться посетить туалет",
-    [Language.EN]: "We know how awkward it can be to meet your significant other's parents. That's no reason to be afraid to visit the toilet",
+    [Language.EN]: "We know how awkward it can be to meet your significant other's parents. That's no reason to be afraid to visit the restroom",
   },
 
   "media-tap-picture": {
@@ -301,7 +301,7 @@ const translations: TranslationsData = {
 
   "text-updates-description-text": {
     [Language.RU]: "- Советы экспертов как покакать и не навредить здоровью в туалете. <br>- Счётчик сохранённой воды за время использования Mute it",
-    [Language.EN]: "- Expert advice on how not to harm your health in the toilet. <br>- Counter of water saved during use of Mute it"
+    [Language.EN]: "- Expert advice on how not to harm your health in the restroom. <br>- Counter of water saved during use of Mute it"
   },
   "text-in-process-text": {
     [Language.RU]: "В процессе…",

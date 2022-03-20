@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import script from 'next/script';
 import { ChangeEvent, useContext, useEffect } from 'react';
 import { languageContext } from '../contexts/language';
 import useTranslation from '../hooks/useTranslation';
@@ -42,7 +41,6 @@ export const initSounds = () => {
       return;
     }
 
-    console.log('click')
     //@ts-ignore
     if (audio.paused) {
       playAudio(audio);
@@ -162,7 +160,7 @@ const Home: NextPage = () => {
                   </a>
                 </div>
                 <div className="lang-select">
-                  <select value={language} onChange={onChangeLanguage} className="change-lang mt-2" style={{ color: '#fff', background: '#000', border: 'solid #fff 2px', borderRadius: '10px' }}>
+                  <select value={language} onChange={onChangeLanguage} className="change-lang mt-2">
                     {Object.values(Language).map((lang) => (
                       <option key={lang} value={lang}>{lang}</option>
                     ))}
@@ -391,11 +389,10 @@ const Home: NextPage = () => {
               <div className="d-flex flex-column">
                 <a className="bi bi-box-arrow-right text-light p-2" href="http://olianayda.com" target="_blank">olianayda.com</a>
                 <a className="bi bi-box-arrow-right text-light p-2" href="http://alexdolbun.com" target="_blank">alexdolbun.com</a>
+								<a className="bi bi-box-arrow-right text-light p-2" href="https://nikitakhristenko.com" target="_blank">nikitakhristenko.com</a>
+								<a className="bi bi-box-arrow-right text-light p-2" href="https://evgenykhristenko.com" target="_blank">evgenykhristenko.com</a>
                 <a className="bi bi-box-arrow-right text-light p-2" href="https://alexandrverevkin.com/" target="_blank">alexandrverevkin.com</a>
                 <a className="bi bi-box-arrow-right text-light p-2" href="https://maximlitvinov.me" target="_blank">maximlitvinov.me</a>
-                <a className="bi bi-box-arrow-right text-light p-2" href="https://juliaudovichenko.com" target="_blank">juliaudovichenko.com</a>
-                <a className="bi bi-box-arrow-right text-light p-2" href="https://evgenykhristenko.com" target="_blank">evgenykhristenko.com</a>
-                <a className="bi bi-box-arrow-right text-light p-2" href="https://nikitakhristenko.com" target="_blank">nikitakhristenko.com</a>
               </div>
             </div>
             <div className="col-sm-3">
