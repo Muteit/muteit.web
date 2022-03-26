@@ -7,7 +7,7 @@ import { Language } from '../interfaces/Language';
 
 export const initSounds = () => {
   let d = document;
-  let audio = d.querySelector('#audio');
+  let audio: HTMLAudioElement | null = d.querySelector('#audio');
   let tap = d.querySelector('.tap');
   let buttons = d.querySelectorAll('.btn.control');
   if (!audio || !buttons || !tap || !d) {
@@ -19,13 +19,15 @@ export const initSounds = () => {
     if (this.currentTime > this.duration - .44) {
       //@ts-ignore
       this.currentTime = 0;
+			this.load();
       //@ts-ignore
       this.play();
     }
   });
 
-  const playAudio = (obj: any) => {
+  const playAudio = (obj: HTMLAudioElement) => {
     let stopAttempt = setInterval(() => {
+			obj.load();
       let promise = obj.play();
 
       if (promise) {
@@ -74,9 +76,9 @@ const Home: NextPage = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    // setTimeout(() => {
       initSounds();
-    }, 500);
+    // }, 0);
   }, []);
 
   return (
@@ -449,7 +451,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <audio id="audio" preload="none" loop>
+      <audio id="audio" preload="auto" loop>
         <source src="../static/assets/audio/watertap.mp3" type="audio/mp3" />
       </audio>
     </>
