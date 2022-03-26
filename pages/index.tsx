@@ -452,7 +452,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <audio id="audio" preload="auto" loop>
-        <source src="https://muteit.app/watertap.mp3" type="audio/mp3" />
+        <source src="/watertap.mp3" type="audio/mp3" />
       </audio>
     </>
   );
